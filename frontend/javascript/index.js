@@ -1,5 +1,4 @@
 import "index.css"
-import "syntax-highlighting.css"
 
 // Import all JavaScript & CSS files from src/_components
 import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"
@@ -10,12 +9,10 @@ import 'abcjs/abcjs-audio.css'
 
 // Render Music
 if (document.getElementById('paper')) {
-  var abcString = document.getElementById("paper").innerText
-  var visualOptions = { responsive: 'resize' }
-  var visualObj = abcjs.renderAbc("paper", abcString, visualOptions)
+    var abcString = document.getElementById("paper").innerText
+    var visualOptions = { responsive: 'resize' }
+    var visualObj = abcjs.renderAbc("paper", abcString, visualOptions)
 
-document.querySelector(".activate-audio").addEventListener("click", activate);
-function activate() {
     if (abcjs.synth.supportsAudio()) {
         var controlOptions = {
             displayRestart: true,
@@ -40,7 +37,6 @@ function activate() {
     } else {
         console.log("audio is not supported on this browser");
     };
-}
 }
 
 console.info("Bridgetown is loaded!")
