@@ -1,15 +1,41 @@
 <!doctype html>
-<html lang="{{ site.locale }}">
+<html lang="en">
   <head>
-    {% render "head", metadata: site.metadata, title: resource.data.title %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.metadata.title }} - {{ page.title }}</title>
+
+    <!-- Meta -->
+    <meta name="description" content="{{ site.metadata.description }}" />
+    <meta name="author" content="{{ site.metadata.author }}">
+
+    <!-- Favicons -->
+    <!-- 
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    -->
+
+    <!-- Style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% asset_path css %}" />
+
+    <!-- Script -->
+    <script src="{% asset_path js %}" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+    {% live_reload_dev_js %}
+
   </head>
-  <body class="{{ resource.data.layout }} {{ resource.data.page_class }}">
-    {% render "navbar", metadata: site.metadata, resource: resource %}
-
-    <main>
-      {{ content }}
+  <body>
+    <main class="container">
+      <div class="row g-5 m-1">
+        {{ content }}
+      </div>
     </main>
-
-    {% render "footer", metadata: site.metadata %}
   </body>
+
 </html>
