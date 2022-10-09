@@ -11,7 +11,20 @@ class Builders::Abc < SiteBuilder
         title title
         layout :abc
         permalink "/#{filename}.html"
-        content "<pre>\n#{content}\n</pre>\n"
+
+        content(content.split(/(?=X:)/).map{|content_block|
+          id = content_block.match(/X:(.*)/)[1]
+          <<~ABC
+            <div class="tune" id="tune#{id}">
+              <div class="audio" id="tune#{id}-audio"></div>
+              <div class="paper" id="tune#{id}-paper">
+              <pre>
+              #{content_block}
+              </pre>
+              </div>
+            </div>
+          ABC
+        }.join("<hr/>\n"))
       end
     end
   end
