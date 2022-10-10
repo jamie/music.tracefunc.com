@@ -18,23 +18,22 @@ Array.from(document.getElementsByClassName('tune')).forEach(function (tune) {
     let visualObj = abcjs.renderAbc(paperId, abcString, visualOptions)
 
     if (abcjs.synth.supportsAudio()) {
-        let controlOptions = {
+        let visualOptions = {
             displayRestart: true,
             displayPlay: true,
             displayProgress: true,
             displayClock: true
         }
         let synthControl = new abcjs.synth.SynthController();
-        synthControl.load(audioSelector, null, controlOptions);
+        synthControl.load(audioSelector, null, visualOptions);
         synthControl.disable(true);
 
-        let midiBuffer = new abcjs.synth.CreateSynth();
-        midiBuffer.init({
+        let synth = new abcjs.synth.CreateSynth();
+        let synthOptions = {
             visualObj: visualObj[0],
-            options: {
-
-            }
-        }).then(function () {
+            options: {}
+        }
+        synth.init((synthOptions)).then(function () {
             synthControl.setTune(visualObj[0], true).then(function (response) {
                 tune.querySelector(".abcjs-inline-audio").classList.remove("disabled");
             })
