@@ -18,7 +18,7 @@ class Builders::Abc < SiteBuilder
           id = content_block.match(/X:(.*)/)[1]
           <<~ABC
             <div class="tune" id="tune#{id}">
-              <div class="audio" id="tune#{id}-audio"></div>
+              <div class="audio abcjs-large" id="tune#{id}-audio"></div>
               <div class="paper" id="tune#{id}-paper">
               <pre>
               #{content_block}

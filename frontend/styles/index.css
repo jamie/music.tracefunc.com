@@ -86,3 +86,9 @@ h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+/* ABCJS Styles */
+.abcjs-btn {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
