@@ -1,0 +1,44 @@
+X:1
+T:The Great Sea
+G:The Legend of Zelda for Double Ocarina
+% Transcription from STL Ocarina, with modifications
+K:C
+M:4/4
+L:1/16
+Q:1/4=120
+P:A
+%                v     v These notes marked (L)
+B3(G D12) | G2GB d12 | d2cB c12 | A16 |
+|: E2E_G =G12 | [1 A4 G12 | D16 :| [2 A4 G12 | _G16 | G12 ||
+
+X:2
+T:Song of Healing
+K:C
+M:3/4
+L:1/8
+Q:1/4=120
+P:A
+|: B2 A2 E2 | B2 A2 E2 | B2 A2 ED | E6 :|
+|: F2 C2 B,2 | F2 C2 B,2 | F2 E2 [1 BA | B6 :| [2 B2 | G6 ||
+A2 A2 A2 | d2 d2 d2 | A2 A2 A2 | d2 A4 | F2 F2 F2 | _B2 _B2 _B2 | E2 D2 A2 | E6 |
+
+X:3
+T:Shop Theme
+K:C
+M:3/4
+L:1/8
+Q:1/4=120
+P:A
+|: z6 | c2 cc AA G2 | z c GG AA cc | B2 BB AA G2 |
+z G AA _B_B | B2 BB AA G2 | z B GG A B c2 | c c2 ccc z :|
+
+X:4
+T:Song of Storms
+K:C
+M:3/4
+L:1/8
+Q:1/4=120
+P:A
+%  v       v These notes marked (L)
+|: DF d4 | DF d4 | e3 fef | ec A4 |
+A2 D2 FG | [1 A6 | A2 D2 FG | E6 :| [2 A4 A2 | D6 ||
