@@ -11,6 +11,8 @@ GEM
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     amazing_print (1.4.0)
+    base64 (0.2.0)
+    bigdecimal (3.1.9)
     bridgetown (1.1.0)
       bridgetown-builder (= 1.1.0)
       bridgetown-core (= 1.1.0)
@@ -45,6 +47,7 @@ GEM
       bridgetown-core (= 1.1.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.10)
+    csv (3.3.2)
     erubi (1.11.0)
     faraday (1.10.2)
       faraday-em_http (~> 1.0)
@@ -88,6 +91,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     minitest (5.16.3)
     multipart-post (2.2.3)
+    mutex_m (0.3.0)
     nio4r (2.7.4)
     public_suffix (5.0.0)
     puma (5.6.5)
@@ -122,7 +126,11 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  base64
+  bigdecimal
   bridgetown (~> 1.1.0)
+  csv
+  mutex_m
   puma (~> 5.6)
 
 BUNDLED WITH
