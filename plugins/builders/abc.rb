@@ -18,12 +18,13 @@ class Builders::Abc < SiteBuilder
           id = content_block.match(/X:(.*)/)[1]
           <<~ABC
             <div class="tune" id="tune#{id}">
-              <div class="audio abcjs-large" id="tune#{id}-audio"></div>
               <div class="paper" id="tune#{id}-paper">
-              <pre>
-              #{content_block}
-              </pre>
+                <pre>
+                #{content_block}
+                </pre>
               </div>
+              <div class="audio abcjs-large" id="tune#{id}-audio"></div>
+              <div class="paper-transpose" id="tune#{id}-paper-transpose"></div>
             </div>
           ABC
         }.join("<hr/>\n"))
