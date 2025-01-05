@@ -3,10 +3,10 @@ class Builders::Abc < SiteBuilder
     Dir['src/_songs/*.abc'].each do |song|
       content = File.read(song)
 
-      title = content.match(/T:(.*)/)
-      group = content.match(/G:(.*)/)
-      next unless title || group
-      page_name = (group || title)[1]
+      title = content.match(/^T:(.*)/)
+      book = content.match(/^B:(.*)/)
+      next unless title || book
+      page_name = (book || title)[1]
       filename = page_name.downcase.gsub(/[^a-zA-Z0-9]+/, "_")
 
       add_resource :songs, "#{filename}.md" do
