@@ -1,20 +1,21 @@
 X:1
 T:Star Trek: Deep Space Nine - Theme
 C:Dennis McCarthy
-% Transcribed from https://musescore.com/ericfontainejazz/star-trek-deep-space-nine-theme
+S:https://musescore.com/ericfontainejazz/star-trek-deep-space-nine-theme
 % NB: There's a lot of eighth-sixteenth combos that should be dotted-eighth-sixteenth
 %     Need to switch to L:1/16 and double all note timings to fix.
-K:C
+V:T
 M:4/4
 L:1/8
-Q:1/4=75
-P:A
-V:T
+Q:1/2=75
+K:C
 Hz8 | z2 G,2 D2 G2 | HA8 | z8 | G,2 D2 G2 A2- | A4 d4- | d6 cB | G2 C6- | C8- | C4 D3 G | HG8 |
-z4 D2 G2 | A4 d4 | z4 (3D2A2B2 | A6 G2- | HG8 |
+z4 D2 G2 | A4 d4 | z4 (3D2G2B2 | A6 G2- | HG8 |
+P:A
 Q:1/4=94
-|: (3Gce d6 | f2 e/f/g- g4 | (3Gce d6 | f2 e/c/G "^To coda on cue" F2 c2 |
-(3Gce d6 | f2 e/f/g- g3 c | c'b/g/ cd-d4 | F3 Gc/ c3 |
-FE/F/ G4 cB | GF/ F4 z2 | HDE/F/ G4 FE | CD/ D6 |
-FE/F/ G2- G2 cB | GA/ A4 z B- | B c2 G F/E/ C2 C- | C8 :|
-!coda! (3Gce d6 | f2 e/f/g- g3 c | c'b/g/ cd- d4 | F3 Gc/ Hc3 ||
+|: (3Gce d6 | f2 e/f/g- g4 !breath! | (3Gce d6 | f2 e/c/G "^To coda on cue" F2 c2 |
+(3Gce d6 | f2 e/f/g- g3 c !breath! | c'b/g/ cd-d4 | F3 G3/c/ c3 |
+P:B
+FE/F/ G4 cB | G3/F/ F4 z2 | HDE/F/ G4 FE | C3/D/ D6 |
+FE/F/ G2- G2 cB | G3/A/ A4 z B- | B c2 G F/E/ C2 C- | C8 :|
+!coda! (3Gce d6 | f2 e/f/g- g3 c | c'b/g/ cd- d4 | F3 G3/c/ Hc3 ||
