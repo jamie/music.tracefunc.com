@@ -12,6 +12,7 @@ function transposeFromKey(abcString) {
   let key = abcString.match(/K:(\w+)/)[1];
   console.log(key);
   const cKeyFrom = {
+    A: 3,
     B: 1,
     Ebm: -6,
   };
