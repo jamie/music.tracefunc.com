@@ -9,11 +9,40 @@ import "abcjs/abcjs-audio.css";
 
 // Render Music
 function transposeFromKey(abcString) {
-  let key = abcString.match(/K:(\w+)/)[1];
+  let key = abcString.match(/K: ?(\w+)/)[1];
   console.log(key);
   const cKeyFrom = {
+    // https://en.wikipedia.org/wiki/Circle_of_fifths
+    // Each step cw is +5, ccw is -5.
+    // TODO: Automatically mark transposed score with the
+    //       major key, so Aerophone can transpose to correct notes.
+    C: 0,
+    Am: 0,
+    G: 5,
+    Em: 5,
+    D: -2,
+    Bm: -2,
     A: 3,
+    "F#m": 3,
+    E: -4,
+    "C#m": -4,
     B: 1,
+    "G#m": 1,
+    F: -5,
+    Dm: -5,
+    Bb: 2,
+    Gm: 2,
+    Eb: -3,
+    Cm: -3,
+    Ab: 4,
+    Fm: 4,
+    Db: -1,
+    "C#": -1,
+    Bbm: -1,
+    "A#m": -1,
+    "F#": -6,
+    Gb: -6,
+    "D#m": -6,
     Ebm: -6,
   };
   return cKeyFrom[key] || 0;
