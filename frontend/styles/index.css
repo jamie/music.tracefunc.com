@@ -91,4 +91,8 @@ h6 {
 .abcjs-btn {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+.abcjs-container {
+    [data-name="part"] {
+        color: red;
+    }
 }
