@@ -55,7 +55,10 @@ Array.from(document.getElementsByClassName("tune")).forEach(function (tune) {
   let audioSelector = "#" + tune.id + "-audio";
 
   let abcString = tune.getElementsByClassName("paper")[0].innerText;
-  let visualOptions = { responsive: "resize" };
+  let visualOptions = {
+    responsive: "resize",
+    tablature: [{ instrument: "guitar", label: "Guitar (%T)" }],
+  };
   let visualObj = abcjs.renderAbc(paperId, abcString, visualOptions);
 
   let visualTranspose = transposeFromKey(abcString);
