@@ -1,0 +1,23 @@
+X:1
+T:Final Fantasy IV - Main Theme
+C:Nobuo Uematsu
+S:https://vgleadsheets.com/view/final-fantasy-iv/main-theme-of-final-fantasy-iv
+Z:Reil Deil Neil
+V:T
+M:4/4
+L:1/16
+Q:"Half time backbeat" 1/4=140
+K:C
+P:Intro
+| "A-" A,CEA "G/A" G,B,DG "A-" A,CEA "G/A" B,DGB | "A-" CEAc "G/A" B,DGB "A-" CEAc "G/A" DGBd ||
+P:A
+L:1/4
+|: "A-" A2 c2 | e2 g2 | "D7" ^f4 | d3 d/e/ |
+| "F" f2 g f | "A-7" e c A c | "G-" d4- & _b2d'2 | d3 c & c'2_b2 |
+| "F-" d4- & _a2c'2 | d3 c & _b2_a2 | "C" c4- & g4- | c4 & g4 :|
+P:B
+| "Bb" d f e f | a g f g | "A-" e2 c2- & x2 c'2 | c4 & b2 a2 |
+| "Bb" d f e f | a g f g | "A-" e4- & x2 c'2 | e4 & b2 a2 |
+| "C" e g ^f g | b a g a | "B-" ^f2 d2- & x2 b2 | d4 & a2 ^f2 |
+| "C" e g ^f g | b a g a | "F" a c' b c' | e' d' c' d' |
+| "E" b3- b/c'/4^c'/4 | "G" d'3- d'/_d'/4c'/4 | "E7sus4" b4- | "E7" b4 |
