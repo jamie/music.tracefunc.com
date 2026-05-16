@@ -114,9 +114,9 @@
   integrity sha512-bZBrLAIX1kpWelV0XemxBZllyRmM6vgFQQG2GdNb+r3Fkp0FOh1NJSvekXDs7jq70k4euu1cryLMfU+mTXlEpw==
 
 abcjs@^6.1.0:
-  version "6.4.4"
-  resolved "https://registry.yarnpkg.com/abcjs/-/abcjs-6.4.4.tgz#c27470145a4cb04bd6ea807aa4076d833f57eb2a"
-  integrity sha512-dT3Z2vb8yihbiPMzSoup0JOcvO2je4qpFNlTD+kS5VBelE3AASAs18dS5qeMWkZeqCz7kI/hz62B2lpMDugWLA==
+  version "6.6.3"
+  resolved "https://registry.yarnpkg.com/abcjs/-/abcjs-6.6.3.tgz#4d990acbac0de220f6c7ef0066952cec459856e5"
+  integrity sha512-BerGJCY8+pvJV1+VxZn1Y/VNcuSAk8BysCbBICY0W8fgE5g4W6sA/zB5pKxcgqzY5/gObh8ugl++4ZoaTqUCkw==
 
 autoprefixer@^10.4.13:
   version "10.4.20"
