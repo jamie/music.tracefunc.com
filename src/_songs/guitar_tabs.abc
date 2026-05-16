@@ -1,0 +1,10 @@
+X:1
+T:zz_Guitar Tabs
+%%text A visual demonstration of how ABCjs translates notes to guitar tablature.
+V:T
+M:3/4
+L:1/4
+K:C
+| "E" E, F, G, | "A" A, B, C | "D" D E F |
+| "G" G A2 | "B" B c d | "E" e f g |
+| a/ b/ c'/ d'/ e'/ f'/ | g'/ a'/ b'/ c''3 ||
