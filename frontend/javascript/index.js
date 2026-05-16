@@ -70,25 +70,32 @@ Array.from(document.getElementsByClassName("tune")).forEach(function (tune) {
   }
 
   if (abcjs.synth.supportsAudio()) {
-    let visualOptions = {
+    let synthVisualOptions = {
       displayRestart: true,
       displayPlay: true,
       displayProgress: true,
       displayClock: true,
     };
     let synthControl = new abcjs.synth.SynthController();
-    synthControl.load(audioSelector, null, visualOptions);
+    synthControl.load(audioSelector, null, synthVisualOptions);
     synthControl.disable(true);
 
     let synth = new abcjs.synth.CreateSynth();
     let synthOptions = {
       visualObj: visualObj[0],
-      options: {},
     };
     synth.init(synthOptions).then(function () {
-      synthControl.setTune(visualObj[0], true).then(function (response) {
-        tune.querySelector(".abcjs-inline-audio").classList.remove("disabled");
-      });
+      let userAction = false;
+      let audioParams = {
+        chordsOff: true,
+      };
+      synthControl
+        .setTune(visualObj[0], userAction, audioParams)
+        .then(function (response) {
+          tune
+            .querySelector(".abcjs-inline-audio")
+            .classList.remove("disabled");
+        });
     });
   }
 });
