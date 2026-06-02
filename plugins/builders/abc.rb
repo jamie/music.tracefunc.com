@@ -4,7 +4,7 @@ class Builders::Abc < SiteBuilder
       content = File.read(song)
 
       title = content.match(/^T:(.*)/)&.captures&.first&.gsub(/\(.*/, "")&.strip
-      book = content.match(/^B:(.*)/)&.captures&.first&.strip
+      book = content.match(/^B:(.*)/)&.captures&.first&.strip.then { |text| "\"#{text}\"" unless text.empty? }
       next unless title || book
       page_name = book || title
       filename = page_name.downcase.gsub(/[^a-zA-Z0-9]+/, "_")
