@@ -1,0 +1,46 @@
+X: 1
+T: To Zanarkand - Final Fantasy X
+C: Nobuo Uematsu
+S: Final Fantasy Guitar Solo Collection, p100
+B: Final Fantasy Guitar Solo Collection
+V: 1 clef=treble stem=up
+V: 2 clef=treble stem=down
+M: 3/4
+L: 1/8
+Q: 1/4=85
+K: G
+P:A
+V:1
+"Em" [GBe]3 B ef | "C" [cg]6 | "D" [Ad]3 A de | "Bm" [df]4 z2 |
+"Cmaj7" [GB]2 B2 B2 | [GB]2 A3 d | "Bm" [F6] | d6 |
+"Am" [ce]2 [ce]2 [ce]2 | [ce]2 d3 g | "F" c6 | z6 |
+V:2
+E4 D2 | C6 | D4 C2 | B,6 |
+[CE]6 | [CE]6 | B,B df dB | d6 |
+[A,A]6 | [A,A]6 | =F,C =FA cA | =F,C =FA c=f |
+% page 2
+V:1
+"Em" e3 B ef | "Cmaj7" [Bg]2 f2 e2 | "D" d3 e d2 |
+"G" B6 | "Em" e3 B ef | "Cmaj7" [Bg]2 f2 g2 |
+"D" a3 g a2 | "G" b6 || "Em" e3 B ef |
+"Cmaj7" [Bg]2 f2 e2 | "D" d3 e d2 | "G" B4 GA | "Cmaj7" [GB]2 [GB]2 [GB]2 |
+"D7" B2 A2 D2 | "Am7" G3 G "Bm" FD | "Cmaj7" E2 z E Gc | eE Gc eg |
+V:2
+E,B, E4 | C G2 G2 G | F,D A4 |
+G,D GA Bd | A,B, E4 | C G2 G2 G |
+DA d4 | [GB]D GB GD || E,B, E4 |
+C G2 G2 G | F,D A4 | G,D GD- D2 | C E2 E2 E |
+[A,DA]6 | z A, E2 B,2 | CG [Be] z z2 | z6 |
+% page 3
+V:1
+"Am" A4 e2 | "Fmaj7" e2 d2 c2 | "G" B4 g2 |
+"Em" g6 | "Bm" B4 f2 | "F#m" [A^cf]6 | "Am" A4 e2 |
+"Bsus4" [FBe]2 "B" ^d4 | "Bm" B4 f2 | "G" [Bf]2 e2 d2 |
+"A" ^c4 a2 | "F#m" [A^ca]3 z3 | "C#m" [^ce^g]2 e2 c2 |
+"Gmaj7" [DGB]4 [GBf]2 | "F#m" A3 F A2 | "B" B6 | z6 |
+V:2
+z A, EA, cA | =F,A bA cA | z G, DG, BG |
+E,B, EF GB | z B, FB, dB | F,6 | z A, EA, cA |
+B,6 | z B, FB, dB | G,G eG eG |
+z A, EA Bc | F,3 ^G AB | C6 |
+G,6 | [F,^C]6 | B,F B^d fd | B6 |
