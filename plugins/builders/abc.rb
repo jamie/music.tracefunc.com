@@ -1,6 +1,6 @@
 class Builders::Abc < SiteBuilder
   def build
-    Dir['src/_songs/*.abc'].each do |song|
+    Dir['src/_songs/**/*.abc'].each do |song|
       content = File.read(song)
 
       title = content.match(/^T:(.*)/)&.captures&.first&.gsub(/\(.*/, "")&.strip
