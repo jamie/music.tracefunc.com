@@ -86,6 +86,15 @@ function getTransposition() {
   return { visualTranspose: transposition };
 }
 
+const tablatureToggle = document.getElementById("tablature-toggle");
+function getTablature() {
+  if (document.getElementById("tablature-toggle")?.checked) {
+    return { tablature: [{ instrument: "guitar", label: "Guitar (%T)" }] };
+  } else {
+    return {};
+  }
+}
+
 // Render Music
 
 function renderTune(tune) {
@@ -98,8 +107,8 @@ function renderTune(tune) {
 
   let visualOptions = {
     responsive: "resize",
-    tablature: [{ instrument: "guitar", label: "Guitar (%T)" }],
     ...getTransposition(),
+    ...getTablature(),
   };
   let visualObj = abcjs.renderAbc(paperId, abcString, visualOptions);
 
@@ -144,4 +153,6 @@ function rerender() {
   });
 }
 transposeSelect?.addEventListener("change", rerender);
+tablatureToggle?.addEventListener("change", rerender);
+
 console.info("Bridgetown is loaded!");
