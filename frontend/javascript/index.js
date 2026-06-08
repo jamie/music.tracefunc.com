@@ -64,7 +64,6 @@ function transposeFromKey(abcString) {
 Array.from(document.getElementsByClassName("tune")).forEach(function (tune) {
   console.log(tune);
   let paperId = tune.id + "-paper";
-  let paperTransposeId = tune.id + "-paper-transpose";
   let audioSelector = "#" + tune.id + "-audio";
 
   let abcString = tune.getElementsByClassName("paper")[0].innerText;
@@ -73,14 +72,7 @@ Array.from(document.getElementsByClassName("tune")).forEach(function (tune) {
     tablature: [{ instrument: "guitar", label: "Guitar (%T)" }],
   };
   let visualObj = abcjs.renderAbc(paperId, abcString, visualOptions);
-
-  let visualTranspose = transposeFromKey(abcString);
-  if (visualTranspose != 0) {
-    abcjs.renderAbc(paperTransposeId, abcString, {
-      ...visualOptions,
-      visualTranspose: visualTranspose,
-    });
-  }
+  // visualTranspose: visualTranspose,
 
   if (abcjs.synth.supportsAudio()) {
     let synthVisualOptions = {

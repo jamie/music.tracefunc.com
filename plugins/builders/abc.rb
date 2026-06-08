@@ -27,7 +27,6 @@ class Builders::Abc < SiteBuilder
                 </pre>
               </div>
               <div class="audio abcjs-large" id="tune#{id}-audio"></div>
-              <div class="paper-transpose" id="tune#{id}-paper-transpose"></div>
             </div>
           ABC
         }.join("<hr/>\n"))
