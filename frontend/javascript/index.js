@@ -11,6 +11,19 @@ import "abcjs/abcjs-audio.css";
 function transposeFromKey(abcString) {
   let key = abcString.match(/K: ?(\w+)/)[1];
   console.log(key);
+  // "bbbbbb Gb / D#m": -6,
+  // "bbbbb Db / C#m": -1,
+  // "bbbb Ab / Fm": 4,
+  // "bbb Eb / Cm": -3,
+  // "bb Bb / Gm": 2,
+  // "b F / Dm": -5,
+  // "-- C / Am": 0,
+  // "# G / Em": 5,
+  // "## D / Bm": -2,
+  // "### A / F#m": 3,
+  // "#### E / C#m": -4,
+  // "##### B / G#m": 1,
+  // "###### F# / D#m": -6,
   const cKeyFrom = {
     // https://en.wikipedia.org/wiki/Circle_of_fifths
     // Each step cw is +5, ccw is -5.
