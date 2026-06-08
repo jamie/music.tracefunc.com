@@ -61,7 +61,7 @@ function transposeFromKey(abcString) {
   return cKeyFrom[key] || 0;
 }
 
-Array.from(document.getElementsByClassName("tune")).forEach(function (tune) {
+function renderTune(tune) {
   console.log(tune);
   let paperId = tune.id + "-paper";
   let audioSelector = "#page-audio";
@@ -103,6 +103,10 @@ Array.from(document.getElementsByClassName("tune")).forEach(function (tune) {
         });
     });
   }
+}
+
+Array.from(document.getElementsByClassName("tune")).forEach(function (tune) {
+  renderTune(tune)
 });
 
 console.info("Bridgetown is loaded!");
