@@ -7,6 +7,38 @@ import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}";
 import abcjs from "abcjs";
 import "abcjs/abcjs-audio.css";
 
+// Form/Settings
+const TRANSPOSE_OPTIONS = [
+  { value: -6, label: "Gb / D#m bbbbbb" },
+  { value: -1, label: "Db / C#m bbbbb" },
+  { value: 4, label: "Ab / Fm bbbb" },
+  { value: -3, label: "Eb / Cm bbb" },
+  { value: 2, label: "Bb / Gm bb" },
+  { value: -5, label: "F / Dm b" },
+  { value: 0, label: "C / Am" },
+  { value: 5, label: "G / Em #" },
+  { value: -2, label: "D / Bm ##" },
+  { value: 3, label: "A / F#m ###" },
+  { value: -4, label: "E / C#m ####" },
+  { value: 1, label: "B / G#m #####" },
+  { value: 6, label: "F# / D#m ######" },
+];
+
+const transposeSelect = document.getElementById("transpose-select");
+if (transposeSelect) {
+  TRANSPOSE_OPTIONS.forEach(function ({ value, label }) {
+    const option = document.createElement("option");
+    option.value = String(value);
+    option.textContent = label;
+    transposeSelect.appendChild(option);
+  });
+}
+
+function getTransposition() {
+  const select = document.getElementById("transpose-select");
+  return parseInt(select?.value || "0", 10);
+}
+
 // Render Music
 function transposeFromKey(abcString) {
   let key = abcString.match(/K: ?(\w+)/)[1];
@@ -67,12 +99,17 @@ function renderTune(tune) {
   let audioSelector = "#page-audio";
 
   let abcString = tune.getElementsByClassName("paper")[0].innerText;
+
+  let transposition = transposeFromKey(abcString);
+  // Set default value, can we do this in HTML to not override on pageload?
+  document.getElementById("transpose-select").value = transposition;
+
   let visualOptions = {
     responsive: "resize",
     tablature: [{ instrument: "guitar", label: "Guitar (%T)" }],
+    ...getTransposition(),
   };
   let visualObj = abcjs.renderAbc(paperId, abcString, visualOptions);
-  // visualTranspose: visualTranspose,
 
   if (abcjs.synth.supportsAudio()) {
     let synthVisualOptions = {
@@ -106,7 +143,7 @@ function renderTune(tune) {
 }
 
 Array.from(document.getElementsByClassName("tune")).forEach(function (tune) {
-  renderTune(tune)
+  renderTune(tune);
 });
 
 console.info("Bridgetown is loaded!");
