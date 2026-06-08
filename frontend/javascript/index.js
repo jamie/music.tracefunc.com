@@ -64,7 +64,7 @@ function transposeFromKey(abcString) {
 Array.from(document.getElementsByClassName("tune")).forEach(function (tune) {
   console.log(tune);
   let paperId = tune.id + "-paper";
-  let audioSelector = "#" + tune.id + "-audio";
+  let audioSelector = "#page-audio";
 
   let abcString = tune.getElementsByClassName("paper")[0].innerText;
   let visualOptions = {

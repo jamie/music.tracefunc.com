@@ -26,7 +26,6 @@ class Builders::Abc < SiteBuilder
                 #{content_block}
                 </pre>
               </div>
-              <div class="audio abcjs-large" id="tune#{id}-audio"></div>
             </div>
           ABC
         }.join("<hr/>\n"))
