@@ -22,11 +22,11 @@ class Builders::Abc < SiteBuilder
           <<~ABC
             <div class="tune" id="tune#{id}">
               <div class="paper" id="tune#{id}-paper">
-                <pre>
-                #{content_block}
-                </pre>
               </div>
             </div>
+            <pre class="tune-source" id="tune#{id}-source">
+            #{content_block}
+            </pre>
           ABC
         }.join("<hr/>\n"))
       end

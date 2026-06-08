@@ -96,13 +96,13 @@ function transposeFromKey(abcString) {
 function renderTune(tune) {
   console.log(tune);
   let paperId = tune.id + "-paper";
+  let sourceId = tune.id + "-source";
   let audioSelector = "#page-audio";
-
-  let abcString = tune.getElementsByClassName("paper")[0].innerText;
 
   let transposition = transposeFromKey(abcString);
   // Set default value, can we do this in HTML to not override on pageload?
   document.getElementById("transpose-select").value = transposition;
+  let abcString = document.getElementById(sourceId).innerText;
 
   let visualOptions = {
     responsive: "resize",

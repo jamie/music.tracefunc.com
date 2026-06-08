@@ -91,6 +91,10 @@ h6 {
     margin-bottom: 0;
 }
 
+.tune-source {
+    display: none;
+}
+
 /* ABCJS Styles */
 .abcjs-btn {
     padding-top: 0 !important;
