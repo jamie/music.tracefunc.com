@@ -14,6 +14,7 @@ layout: default
   <li class="list-group-item"><a href="https://abcnotation.com/wiki/abc:standard:v2.1">ABC Standard v2.1</a></li>
   <li class="list-group-item"><a href="https://paulrosen.github.io/abcjs/">ABCJS</a>, used for rendering</li>
   <li class="list-group-item"><a href="https://abc.rectanglered.com/">ABC Live Editor/Transposer</a></li>
+  <li class="list-group-item"><a href="https://michaeleskin.com/abctools/abctools.html">Michael Eskin's ABC Transcription Tools</a></li>
 </ul>
 
 ## Reference

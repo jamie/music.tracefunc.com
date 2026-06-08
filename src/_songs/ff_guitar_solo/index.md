@@ -1,6 +1,7 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
-song_folder:
+title: Final Fantasy Solo Guitar Collections Vol. 1
+song_folder: ff_guitar_solo
 layout: default
 ---
 

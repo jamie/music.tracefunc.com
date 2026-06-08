@@ -8,11 +8,14 @@ class Builders::Abc < SiteBuilder
       next unless title || book
       page_name = book || title
       filename = page_name.downcase.gsub(/[^a-zA-Z0-9]+/, "_")
+      folder = File.dirname(song).split("/").last
+      folder = nil if folder == "_songs"
 
       add_resource :songs, "#{filename}.md" do
         title page_name
         layout :abc
-        permalink "/#{filename}.html"
+        folder folder
+        permalink ["", "songs", folder, "#{filename}.html"].compact.join("/")
 
         content(content.split(/(?=X:)/).map{|content_block|
           id = content_block.match(/X:(.*)/)[1].strip

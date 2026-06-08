@@ -1,6 +1,7 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
-song_folder:
+title: Lead Sheets
+song_folder: vg_leadsheets
 layout: default
 ---
 

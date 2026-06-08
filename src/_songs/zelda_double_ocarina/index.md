@@ -1,6 +1,7 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
-song_folder:
+title: The Legend of Zelda for Double Ocarina
+song_folder: zelda_double_ocarina
 layout: default
 ---
 
