@@ -101,7 +101,7 @@ h6 {
     padding-bottom: 0 !important;
 }
 .abcjs-container {
-    [data-name="part"] {
+    & [data-name="part"] {
         color: red;
     }
 }
