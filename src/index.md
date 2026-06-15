@@ -42,3 +42,5 @@ title: Home
   {% endfor %}
 </ul>
 {% endif %}
+
+## [Links & Reference](/reference)
