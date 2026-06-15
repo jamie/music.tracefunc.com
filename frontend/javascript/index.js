@@ -135,7 +135,8 @@ function renderTune(tune) {
       synthControl
         .setTune(visualObj[0], userAction, audioParams)
         .then(function (response) {
-          tune
+          document
+            .getElementById("page-audio")
             .querySelector(".abcjs-inline-audio")
             .classList.remove("disabled");
         });
