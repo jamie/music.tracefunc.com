@@ -1,0 +1,42 @@
+X: 17
+T: Sorrow and Loss
+B: Final Fantasy Solo Guitar Collections Vol. 1
+G: Final Fantasy IV
+C: Nobuo Uematsu
+S: Final Fantasy Guitar Solo Collection, 21
+V: 1 clef=treble stem=up
+V: 2 clef=treble stem=down
+M: C
+L: 1/8
+Q: 1/4=86
+K: G
+P:A
+V:1
+"Em" E,BcB E,BcB | E,BcB E,BcB |
+"A(onE)" E,^cdc E,cdc | E,^cdc E,cdc |
+"C(onE)" E,cdc E,cdc | "Em" E,cdc E,cdc |
+"Dm" DA=fA DA=fA | "Cm6" CG_eG CG_eG |
+"G" G,DGB dGBd | G,DGB dGBd |
+V:2
+L:1/32
+E,eee Beee ceee Beee E,eee Beee cggg Bggg | E,bbb Bbbb cbbb Bbbb E,bbb Bbbb cd'd'd' Bd'd'd' |
+E,^c'c'c' ^cc'c'c' dc'c'c' cc'c'c' E,c'c'c' cc'c'c' dc'c'c' cc'c'c' | E,aaa ^caaa daaa caaa E,aaa caaa daaa cbbb |
+E,c'c'c' cc'c'c' dc'c'c' cc'c'c' E,d'd'd' cd'd'd' dc'c'c' cc'c'c' | E,bbb cbbb dggg cggg E,eee ceee dggg cggg |
+Daaa Aaaa =faaa Aaaa Daaa Aaaa =faaa Aggg | Caaa Gaaa _eaaa Gaaa Caaa Gaaa _eaaa Gggg |
+G,ggg Dggg Gggg Bggg dggg Gggg Bggg dggg | G,ggg Dggg Gggg Bggg dggg Gggg Bggg dggg |
+P:B
+V:1
+L:1/8
+K: C
+"Am" A,EFE A,EFE | A,EFE A,EFE |
+"D(onA)" A,^FGF A,FGF | A,^FGF A,FGF |
+"F(onA)" A,FGF A,FGF | "Am" A,EFE A,EFE |
+"Gm" G,DGD _BDGD | "Fm6" F,CFC _ACFC |
+"C" CEGE GCEG | CEGE GCEG | [CEGc]8 ||
+V:2
+L:1/32
+A,AAA EAAA FAAA EAAA A,AAA EAAA Fccc Eccc | A,eee Eeee Feee Eeee A,eee Eeee Fggg Eggg |
+A,^fff ^Ffff Gfff Ffff A,fff Ffff Gfff Ffff | A,ddd ^Fddd Gddd Fddd A,ddd Fddd Gddd Feee |
+A,fff Ffff Gfff Ffff A,ggg Fggg Gfff Ffff | A,eee Eeee Fccc Eccc A,AAA EAAA Fccc Eccc |
+G,ddd Dddd Gddd Dddd _Bddd Dddd Gddd Dddd | F,ddd Cddd Fddd Cddd _Addd Cddd Fddd Cccc |
+Cccc Eccc Gccc Eccc Gccc Cccc Eccc Gccc | Cccc Eccc Gccc Eccc Gccc Cccc Eccc Gccc | [CEGc]32 ||

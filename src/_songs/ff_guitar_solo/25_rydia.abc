@@ -1,0 +1,25 @@
+X: 15
+T: Rydia
+B: Final Fantasy Solo Guitar Collections Vol. 1
+G: Final Fantasy IV
+C: Nobuo Uematsu
+S: Final Fantasy Guitar Solo Collection, 25
+V: 1 clef=treble stem=up
+M: C
+L: 1/8
+Q: 1/4=76
+K: C
+V:1
+"Cadd9" de c4- cG | "Am" de c4- ce | "F" ef d4 A2 | "Gsus4" c2 "G" B4 G2 |
+"Cadd9" de c4- cG | "Am" de c4- ce | "F" ef d4 A2 | "G" e2 d6 |
+"Em" ga B2- BBed | "Am" d2 c6 | "F" ab c2- ccfe | "G" e2 d6 |
+"Cadd9" de c4- cG | "Am" de g4- gA | "Dm7" g2 fe "Dm7(onG)" d2 c2 |
+"Ab" d_e c4- cG | "Fm7" d_e c4- cG | "Cadd9" de "Csus4" c6- | "C" c8 ||
+V:2
+[CE]8 | [A,E]8 | [F,A]8 | [G,DG]8 |
+[CE]8 | [A,E]8 | [F,A]8 | G, D3- DDGB |
+E,8 & [GB]2 x6 | A, E3- EEAE | F8 & c2 x6 | [G,G]6 G,2 |
+[CE]8 | [A,E]8 | [DAc]4 [A,A]4 |
+_A,3 A, _E_Acz | F,3 F, CF_Az | [CE]2 F_A GFED | [CEG]8 ||
+
+Notes: Maybe that extra first note(s) in V:2 bar 9, 11 should be in V:1?
