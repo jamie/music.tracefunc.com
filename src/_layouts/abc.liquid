@@ -2,7 +2,11 @@
 layout: default
 ---
 
-<a href="/songs/{{ page.data.folder }}/">back</a>
+<nav>
+  <a href="/">Home</a>
+  {% if page.data.game_url %} &bull; <a href="{{ page.data.game_url }}">{{ page.data.game }}</a>{% endif %}
+  {% if page.data.book_url %} &bull; <a href="{{ page.data.book_url }}">{{ page.data.book }}</a>{% endif %}
+</nav>
 
 {{ content }}
 

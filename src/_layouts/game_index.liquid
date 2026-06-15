@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<nav><a href="/">Home</a></nav>
+
+<h1>{{ page.data.title }}</h1>
+
+{% assign songs_by_book = page.data.songs | group_by: "book" %}
+{% for group in songs_by_book %}
+  {% if group.name != "" %}
+    <h3>{{ group.name }}</h3>
+  {% endif %}
+  <ul class="list-group mb-3">
+    {% for song in group.items %}
+      <li class="list-group-item">
+        <a href="/songs/{{ song.slug }}/">{{ song.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
