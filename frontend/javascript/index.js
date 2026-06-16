@@ -9,19 +9,19 @@ import "abcjs/abcjs-audio.css";
 
 // Form/Settings
 const TRANSPOSE_OPTIONS = [
-  { value: 6, label: "Gb / D#m bbbbbb" },
-  { value: 1, label: "Db / C#m bbbbb" },
-  { value: -4, label: "Ab / Fm bbbb" },
-  { value: 3, label: "Eb / Cm bbb" },
-  { value: -2, label: "Bb / Gm bb" },
-  { value: 5, label: "F / Dm b" },
+  { value: 6, label: "G♭ / D♯m ♭♭♭♭♭♭" },
+  { value: 1, label: "D♭ / C♯m ♭♭♭♭♭" },
+  { value: -4, label: "A♭ / Fm ♭♭♭♭" },
+  { value: 3, label: "E♭ / Cm ♭♭♭" },
+  { value: -2, label: "B♭ / Gm ♭♭" },
+  { value: 5, label: "F / Dm ♭" },
   { value: 0, label: "C / Am" },
-  { value: -5, label: "G / Em #" },
-  { value: 2, label: "D / Bm ##" },
-  { value: -3, label: "A / F#m ###" },
-  { value: 4, label: "E / C#m ####" },
-  { value: -1, label: "B / G#m #####" },
-  { value: -6, label: "F# / D#m ######" },
+  { value: -5, label: "G / Em ♯" },
+  { value: 2, label: "D / Bm ♯♯" },
+  { value: -3, label: "A / F♯m ♯♯♯" },
+  { value: 4, label: "E / C♯m ♯♯♯♯" },
+  { value: -1, label: "B / G♯m ♯♯♯♯♯" },
+  { value: -6, label: "F♯ / D♯m ♯♯♯♯♯♯" },
 ];
 
 const transposeSelect = document.getElementById("transpose-select");
@@ -172,8 +172,12 @@ function renderTune(tune) {
 
     const synth = new abcjs.synth.CreateSynth();
     synth.init({ visualObj: visualObj[0] }).then(function () {
+      const isTab = document.getElementById("tablature-toggle")?.checked;
       synthControl
-        .setTune(visualObj[0], false, { chordsOff: true })
+        .setTune(visualObj[0], false, {
+          chordsOff: true,
+          ...(isTab && { program: 24 }),
+        })
         .then(function () {
           document
             .getElementById("page-audio")
