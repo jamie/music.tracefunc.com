@@ -99,42 +99,82 @@ function getTablature() {
 
 function renderTune(tune) {
   console.log(tune);
-  let paperId = tune.id + "-paper";
-  let sourceId = tune.id + "-source";
-  let audioSelector = "#page-audio";
+  const paperId = tune.id + "-paper";
+  const sourceId = tune.id + "-source";
 
-  let abcString = document.getElementById(sourceId).innerText;
+  const abcString = document.getElementById(sourceId).innerText;
 
-  let visualOptions = {
+  // startChar (from abcelem on click) → milliseconds.
+  // Pre-built synchronously from TimingCallbacks.noteTimings — no playback needed.
+  const charTimeMap = new Map();
+  let totalDurationMs = 0;
+  let synthControl = null;
+  let highlightedElements = [];
+
+  const visualOptions = {
     responsive: "resize",
     ...getTransposition(),
     ...getTablature(),
+    clickListener(abcelem) {
+      if (!synthControl || totalDurationMs === 0) return;
+      const ms = charTimeMap.get(abcelem.startChar);
+      if (ms != null) synthControl.seek(ms / totalDurationMs);
+    },
   };
-  let visualObj = abcjs.renderAbc(paperId, abcString, visualOptions);
+  const visualObj = abcjs.renderAbc(paperId, abcString, visualOptions);
+
+  // TimingCallbacks builds noteTimings synchronously at construction.
+  // Each entry has startCharArray (ABC string positions) and milliseconds.
+  const tc = new abcjs.TimingCallbacks(visualObj[0], {});
+  totalDurationMs = tc.lastMoment;
+  tc.noteTimings.forEach((event) => {
+    if (event.type === "event" && event.startCharArray) {
+      event.startCharArray.forEach((char) =>
+        charTimeMap.set(char, event.milliseconds),
+      );
+    }
+  });
+
+  const cursorControl = {
+    onStart() {
+      highlightedElements = [];
+    },
+    onFinished() {
+      highlightedElements.forEach((el) =>
+        el.classList.remove("abcjs-note_selected"),
+      );
+      highlightedElements = [];
+    },
+    onEvent(event) {
+      highlightedElements.forEach((el) =>
+        el.classList.remove("abcjs-note_selected"),
+      );
+      highlightedElements = [];
+      if (!event.elements) return;
+      event.elements.forEach((noteEls) =>
+        noteEls.forEach((el) => {
+          el.classList.add("abcjs-note_selected");
+          highlightedElements.push(el);
+        }),
+      );
+    },
+  };
 
   if (abcjs.synth.supportsAudio()) {
-    let synthVisualOptions = {
+    synthControl = new abcjs.synth.SynthController();
+    synthControl.load("#page-audio", cursorControl, {
       displayRestart: true,
       displayPlay: true,
       displayProgress: true,
       displayClock: true,
-    };
-    let synthControl = new abcjs.synth.SynthController();
-    synthControl.load(audioSelector, null, synthVisualOptions);
+    });
     synthControl.disable(true);
 
-    let synth = new abcjs.synth.CreateSynth();
-    let synthOptions = {
-      visualObj: visualObj[0],
-    };
-    synth.init(synthOptions).then(function () {
-      let userAction = false;
-      let audioParams = {
-        chordsOff: true,
-      };
+    const synth = new abcjs.synth.CreateSynth();
+    synth.init({ visualObj: visualObj[0] }).then(function () {
       synthControl
-        .setTune(visualObj[0], userAction, audioParams)
-        .then(function (response) {
+        .setTune(visualObj[0], false, { chordsOff: true })
+        .then(function () {
           document
             .getElementById("page-audio")
             .querySelector(".abcjs-inline-audio")

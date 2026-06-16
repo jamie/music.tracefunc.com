@@ -155,6 +155,10 @@ body:has(.abc-player-bar) {
     margin: 0;
 }
 
+.abcjs-note_selected {
+    fill: red !important;
+}
+
 @media (max-width: 768px) {
     body:has(.abc-player-bar) {
         padding-bottom: 9rem;
