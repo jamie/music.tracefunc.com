@@ -87,8 +87,14 @@ function getTransposition() {
 }
 
 const tablatureToggle = document.getElementById("tablature-toggle");
+if (tablatureToggle) {
+  tablatureToggle.checked = document.cookie.split("; ").some((c) => c === "tablature=1");
+  tablatureToggle.addEventListener("change", () => {
+    document.cookie = `tablature=${tablatureToggle.checked ? 1 : 0}; path=/; max-age=${60 * 60 * 24 * 365}`;
+  });
+}
 function getTablature() {
-  if (document.getElementById("tablature-toggle")?.checked) {
+  if (tablatureToggle?.checked) {
     return { tablature: [{ instrument: "guitar", label: "Guitar (%T)" }] };
   } else {
     return {};
