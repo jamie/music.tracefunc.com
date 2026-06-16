@@ -6,16 +6,28 @@ layout: default
 
 <h1>{{ page.data.title }}</h1>
 
-{% assign songs_by_book = page.data.songs | group_by: "book" %}
-{% for group in songs_by_book %}
-  {% if group.name != "" %}
-    <h3>{{ group.name }}</h3>
+{% assign has_books = false %}
+{% for song in page.data.songs %}
+  {% if song.book != "" and song.book != nil %}
+    {% assign has_books = true %}
   {% endif %}
-  <ul class="list-group mb-3">
-    {% for song in group.items %}
-      <li class="list-group-item">
-        <a href="{{ song.url }}">{{ song.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
 {% endfor %}
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      {% if has_books %}<th>Book</th>{% endif %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for song in page.data.songs %}
+      <tr>
+        <td class="text-muted">{{ song.x }}</td>
+        <td><a href="{{ song.url }}">{{ song.title }}</a></td>
+        {% if has_books %}<td class="text-muted">{{ song.book }}</td>{% endif %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
