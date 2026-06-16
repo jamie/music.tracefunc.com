@@ -4,8 +4,7 @@ B: Final Fantasy Solo Guitar Collections Vol. 1
 G: Final Fantasy X
 C: Nobuo Uematsu
 S: Final Fantasy Guitar Solo Collection, p100
-V: 1 clef=treble stem=up
-V: 2 clef=treble stem=down
+%%score (1 2)
 M: 3/4
 L: 1/8
 Q: 1/4=85
