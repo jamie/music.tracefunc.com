@@ -55,9 +55,12 @@ class Builders::Abc < SiteBuilder
     songs_by_book.each do |book_name, book_songs|
       bslug = slugify(book_name)
       sorted = book_songs.sort_by { |s| [s["x"], s["title"]] }
+      image_path = File.join("src", "images", "#{bslug}.webp")
+      cover_image = File.exist?(image_path) ? "/images/#{bslug}.webp" : "/images/missing-cover.webp"
       add_resource :books, "#{bslug}.md" do
         title book_name
         songs sorted
+        cover_image cover_image
         layout :book_index
         permalink "/#{bslug}/"
         content ""
