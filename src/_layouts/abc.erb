@@ -4,11 +4,11 @@ layout: default
 
 <nav>
   <a href="/">Home</a>
-  {% if page.data.game_url %} &bull; <a href="{{ page.data.game_url }}">{{ page.data.game }}</a>{% endif %}
-  {% if page.data.book_url %} &bull; <a href="{{ page.data.book_url }}">{{ page.data.book }}</a>{% endif %}
+  <% if resource.data.game_url %> &bull; <a href="<%= resource.data.game_url %>"><%= resource.data.game %></a><% end %>
+  <% if resource.data.book_url %> &bull; <a href="<%= resource.data.book_url %>"><%= resource.data.book %></a><% end %>
 </nav>
 
-{{ content }}
+<%= yield %>
 
 <div class="abc-player-bar" id="abc-player-bar">
   <div class="abc-player-bar__audio audio abcjs" id="page-audio"></div>

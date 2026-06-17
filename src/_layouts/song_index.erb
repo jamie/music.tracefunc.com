@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h2><a href="/">Home</a></h2>
+
+<%= yield %>
+
+<h2>Songs</h2>
+
+<ul class="list-group">
+  <% collections.songs.resources.each do |song| %>
+    <% if song.data.folder == resource.data.song_folder %>
+      <li class="list-group-item">
+        <a href="<%= song.relative_url %>"><%= song.data.title %></a>
+      </li>
+    <% end %>
+  <% end %>
+</ul>

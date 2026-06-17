@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<nav><a href="/">Home</a></nav>
+
+<h1><%= resource.data.title %></h1>
+
+<% songs_by_game = resource.data.songs.group_by { |s| s["game"] } %>
+<% songs_by_game.each do |game_name, songs| %>
+  <% if game_name != "" && !game_name.nil? %><h3><%= game_name %></h3><% end %>
+  <ul class="list-group mb-3">
+    <% songs.each do |song| %>
+      <li class="list-group-item">
+        <a href="<%= song["url"] %>"><%= song["title"] %></a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

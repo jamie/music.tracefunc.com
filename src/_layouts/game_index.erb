@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<nav><a href="/">Home</a></nav>
+
+<h1><%= resource.data.title %></h1>
+
+<% has_books = resource.data.songs.any? { |s| !s["book"].to_s.empty? } %>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <% if has_books %><th>Sourcebook</th><% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% resource.data.songs.each do |song| %>
+      <tr>
+        <td class="text-muted"><%= song["x"] %></td>
+        <td><a href="<%= song["url"] %>"><%= song["title"] %></a></td>
+        <% if has_books %><td class="text-muted"><%= song["book"] %></td><% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
