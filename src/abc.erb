@@ -3,17 +3,17 @@ layout: default
 title: ABC Notation Examples
 ---
 
+<!-- Basics, https://notabc.app/abc/ -->
+
 <a href="/">back</a>
 
 <h2>ABC Notation Examples</h2>
 
-<p>Each row shows the notation fragment and its rendered output. The fragment is wrapped in minimal headers (<code>X:1 / T: / L:1/8 / K:C</code>) before rendering.</p>
-
 <table class="table abc-examples">
   <colgroup>
-    <col style="width: 16.67%">
-    <col style="width: 33.33%">
-    <col style="width: 50%">
+    <col style="width: 20%">
+    <col style="width: 40%">
+    <col style="width: 40%">
   </colgroup>
   <thead>
     <tr>
@@ -23,6 +23,44 @@ title: ABC Notation Examples
     </tr>
   </thead>
   <tbody>
+    <tr class="abc-example">
+      <td>
+      <p>Information Fields</p>
+      <p>Typical ordering in header:</p>
+      <ul><li>tune identification (XTCOR)</li>
+          <li>background information (BDFGHNSZ)</li>
+          <li>playing notes (PVMLQK)</li></ul>
+      <p>Many fields can be included inline in the score to
+         eg change part, voice, meter, etc. Notate same as in
+         header or in-line like <code>[V:1] [M:3/4] C E G2</code>.</p>
+      </td>
+      <td>
+        <textarea class="abc-example-source" readonly rows="20">
+X:1 % reference number
+T:Tune Title
+C:Composer
+O:Origin % Typically, geographical
+R:Rhythm
+B:Book
+D:Discography
+F:File URL % of this tune
+G:Group % For software collating
+H:History % multiline notes, stories, etc.
+N:Notes % general annotations
+S:Source
+Z:Transcription % person
+P:Part % Header eg ABAB, inline [P:A]
+V:Voice % 1, 2, etc; for different staffs.
+M:Meter % C, 4/4, 6/8, etc.
+L:Note Length % 1/8, length of unmodified C
+Q:Tempo % 1/4=80, note length = bpm
+K:C % Key, A-G, # or b, m for minor
+| c8 |]</textarea>
+      </td>
+      <td class="abc-example-paper"></td>
+    </tr>
+    <%= abc_example("Notes", "C D E F | G A B c ||C,, C, C c c' c''") %>
     <%= abc_example("Note duration", "c c c2 | c4 | c/ c/ c/2 c/2 c3/2 c/2 |") %>
+    <%= abc_example("Bars", "[| c8 | c8 || c8 |: c8 :| c8 |]") %>
   </tbody>
 </table>

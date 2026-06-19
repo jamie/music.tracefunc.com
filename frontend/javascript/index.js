@@ -88,7 +88,9 @@ function getTransposition() {
 
 const tablatureToggle = document.getElementById("tablature-toggle");
 if (tablatureToggle) {
-  tablatureToggle.checked = document.cookie.split("; ").some((c) => c === "tablature=1");
+  tablatureToggle.checked = document.cookie
+    .split("; ")
+    .some((c) => c === "tablature=1");
   tablatureToggle.addEventListener("change", () => {
     document.cookie = `tablature=${tablatureToggle.checked ? 1 : 0}; path=/; max-age=${60 * 60 * 24 * 365}`;
   });
@@ -211,7 +213,10 @@ Array.from(document.querySelectorAll("tr.abc-example")).forEach(function (row) {
   const source = row.querySelector(".abc-example-source");
   const paper = row.querySelector(".abc-example-paper");
   if (!source || !paper) return;
-  const abc = `X:1\nT:\nL:1/8\nK:C\n${source.value.trim()}`;
+  var abc = source.value.trim();
+  if (!abc[0] == "X") {
+    abc = `X:1\nT:\nL:1/8\nK:C\n${abc}`;
+  }
   abcjs.renderAbc(paper, abc, { responsive: "resize" });
 });
 

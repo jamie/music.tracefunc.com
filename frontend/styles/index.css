@@ -76,6 +76,11 @@ h6 {
     color: #727272;
 }
 
+textarea {
+    width: 100%;
+    font-family: monospace;
+}
+
 /*
  * Footer
  */
