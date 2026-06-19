@@ -1,0 +1,24 @@
+X: 18
+T: Edward's Harp
+B: Final Fantasy Solo Guitar Collections Vol. 1
+G: Final Fantasy IV
+C: Nobuo Uematsu
+S: Final Fantasy Guitar Solo Collection
+%%score (1 2)
+M: C
+L: 1/4
+Q: 1/4=91
+K: C
+V:1
+"C" e e d c | "G7" c (3:2:2B^A/ B2 |
+"G7" f f e d | "C" d (3:2:2cB/ c2 |
+"C" g g "C#dim" f e | "Dm" f (3:2:2de/ f (3:2:2ed/ |
+"C" e "D7" e "Fm6" d "G" d | "Csus4" c3 z & x x "C" x x |
+"Em" B B e B | "F" d (3:2:2cB/ c2 |
+"Em" B B e B | "F" d (3:2:2cB/ c2 |
+"Dm" e (3:2:2dc/ "G" B2 | "E7" (3:2:2ef/ (3:2:2ed/ "Am" c z |
+"A7" d2 c d | "G7sus4" c2 B z | "C" c4 ||
+V:2
+L: 1/8
+(3CEG (3eEG (3dEG (3cEG | (3G,DG (3BD^A (3BDG (3G,DG |
+(3B,DG (3fDG (3eDG (3dDG | (3CEG (3cEB (3cEG (3CEG |
