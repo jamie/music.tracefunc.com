@@ -1,0 +1,28 @@
+---
+layout: default
+title: ABC Notation Examples
+---
+
+<a href="/">back</a>
+
+<h2>ABC Notation Examples</h2>
+
+<p>Each row shows the notation fragment and its rendered output. The fragment is wrapped in minimal headers (<code>X:1 / T: / L:1/8 / K:C</code>) before rendering.</p>
+
+<table class="table abc-examples">
+  <colgroup>
+    <col style="width: 16.67%">
+    <col style="width: 33.33%">
+    <col style="width: 50%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Notation</th>
+      <th>Rendered</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= abc_example("Note duration", "c c c2 | c4 | c/ c/ c/2 c/2 c3/2 c/2 |") %>
+  </tbody>
+</table>

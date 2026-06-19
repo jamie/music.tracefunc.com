@@ -206,4 +206,13 @@ function rerender() {
 transposeSelect?.addEventListener("change", rerender);
 tablatureToggle?.addEventListener("change", rerender);
 
+// Render ABC reference examples (no audio, no transpose)
+Array.from(document.querySelectorAll("tr.abc-example")).forEach(function (row) {
+  const source = row.querySelector(".abc-example-source");
+  const paper = row.querySelector(".abc-example-paper");
+  if (!source || !paper) return;
+  const abc = `X:1\nT:\nL:1/8\nK:C\n${source.value.trim()}`;
+  abcjs.renderAbc(paper, abc, { responsive: "resize" });
+});
+
 console.info("Bridgetown is loaded!");
