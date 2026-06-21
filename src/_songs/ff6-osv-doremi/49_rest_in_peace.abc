@@ -1,0 +1,18 @@
+X: 49
+T: Rest in Peace
+B: Final Fantasy VI DoReMi
+G: Final Fantasy VI
+C: Nobuo Uematsu
+M: 4/4
+L: 1/4
+Q: 1/4=70
+K: G
+V:1 clef=treble
+^E F A c | B2 A G/A/ | B e f g |
+b a/g/ a3/ f/ | g2 =f _e | ^c2 B A |
+G2 =F _E | !fermata! D4 |]
+V:2 clef=bass
+L: 1/8
+z4 CA,F,E, | C,E,F,B, [A,^D,B,,]4 | [B,G,E,]4 [B,G,D,]4 |
+A,,E,A,B, [CF,D,]4 | =F,_A,C_E F,A,CE | D,^F,A,^C D,F,A,C |
+_B,,=F,_B,D _A,,_E,_A,C | G,,D,G,D !fermata! !arpeggio! [DB,G,]4 |]

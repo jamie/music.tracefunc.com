@@ -1,0 +1,46 @@
+X: 28
+T: The Dreadful Fight
+B: Final Fantasy IV DoReMi
+G: Final Fantasy IV
+C: Nobuo Uematsu
+M: C
+L: 1/4
+Q: 1/4=165
+K: C
+V:1 clef=treble
+"Am" ^G,/A,/B,/C/- C/B,/C/D/ | E ^D/F/- F/E/A/^G/ |
+c/^G/A/f/ e/a/^g/c''/ | [f4-b-d'-] | [f4bd'] ||
+[P:A] [c_ea] z [C_EA] z || [M: 3/4] [C_EA] [C,_E,A,] z || [M: C] [dfb] z [DFB] z |
+V:2 clef=bass
+A,,3/ A,,/- A,, A,, | A,,3/ A,,/- A,, A,, |
+A,,3/ A,,/- A,, A,, | E,,3 B,, | C,2 ^G,,2 |
+A,, z A,, z || A,, A,, z || [M: 4/4] B,, z B,, z |
+
+
+% Page 2
+[d^fb] [D^FB] z A//B//c//e// | [M: 3/4] [P:B] g ^f z | ^f f z | f e z |
+[M: 4/4] ^d e f f | [M: 3/4] g ^f z | ^f f z | f e z |
+[M: 4/4] ^d e f f | [P:C] [^GB]3/ [Ac]/ [Bd]3/ [ce]/ | [df]3/ [ce]/ [Bd]3/ [^GB]/ | [Ac]3/ [Bd]/ [ce]3/ [df]/ |
+[eg]3/ [df]/ [ce]3/ [Ac]/ | [^GB]3/ [Ac]/ [Bd]3/ [ce]/ | [df]3/ [ce]/ [Bd]3/ [^GB]/ | [Ac]3/ [Bd]/ [ce]3/ [df]/ |
+[eg]3/ [df]/ [ce]3/ [Ac]/ | z/ [Bdg]/[Bdg]/ z/ [Acf]/[Acf]/z/[^GBe]/ | [^GBe] z B//c//d//e// d | z/ [Bdg]/[Bdg]/ z/ [Acf]/[Acf]/z/[^GBe]/ |
+[^GBe] z ^g//f//e//d// c//B//A//G// | [P:D] [CEA]7/ [DE_B]/- | [DE_B]7/ [CEA]/- | [CEA]7/ [B,EG]/- |
+[B,EG]4 | [CEA]7/ [DE_B]/- | [DE_B]7/ [CEA]/- | [CEA]4 |
+[ce] [B^d] [_df] [ce] | [P:E] A/B/ c A/B/ c | A/B/c/B/ A/B/c/e/ | ^d A/B/ c/e/ ^d |
+[Ac]/[Bd]/ [ce] [Ac]/[Bd]/ [ce] | [Ac]/[Bd]/[ce]/[Bd]/ [Ac]/[Bd]/[ce]/[eg]/ | [^d^f] [^d^f] [Ac]/[Bd]/[ce]/[eg]/ | ^f ^d/f/- f/d/ e |
+[M: 2/4] ^c/e/- e/c/ | [M: 4/4] d/B/^c/^A/ c/A/B/^G/ | e/c/ z/ e/ ^d c/A/ | c/A/ z z2 |
+[P:F] f2 e2 | ^d2 e2 | f2 g f | e3 z |
+f2 e2 | ^d2 e2 | f2 g f | e3 z |
+|]
+
+B,, B,, z2 | [M: 3/4] [A,CE]3- | [A,CE] [A,CF]2- | [A,CF] [A,C^F]2- |
+[M: 4/4] [A,C^F]2 [A,CF]2 | [M: 3/4] [A,CE]3- | [A,CE] [A,CF]2- | [A,CF] [A,C^F]2- |
+[M: 4/4] [A,C^F]2 [A,CF]2 | E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ | E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ | F,/C,/F,/C,/ F,/C,/F,/C,/ |
+F,/C,/F,/C,/ F,/C,/F,/C,/ | E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ | E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ | F,/C,/F,/C,/ F,/C,/F,/C,/ |
+F,/C,/F,/C,/ F,/C,/F,/C,/ | G,3/ F,/- F,3/ E,/- | E, z z2 | G,3/ F,/- F,3/ E,/- |
+E, z z2 | A,, A,, A,, A,, | A,, A,, A,, A,, | A,, A,, A,, A,, |
+A,, A,, A,, A,, | A,, A,, A,, A,, | A,, A,, A,, A,, | A,, A,, A,, A,, |
+A,, A,, A,, A,, | A,, A,, A,, A,, | A,, A,, A,, A,, | B,, A,, A,, B,, |
+A,, A,, A,, A,, | A,, A,, A,, A,, | B,, B,, A,, A,, | B,,3/ _B,,/- _B,, A,,- |
+[M: 2/4] A,,/ _A,,3/ | [M: 4/4] G,, ^F,, F,, E,, | E,/C,/ z/ E,/ ^D, C,/A,,/ | C,/A,,/ z z2 |
+F,3/ C,/ F,2 | F,3/ C,/ F,3/ E,/ | D,3/ A,,/ D,2 | E,3/ B,,/ E, E, |
+z [F,A,C] z [E,^G,B,] | z [E,G,_B,] z [E,^G,B,] | D,3/ D,/ D,3/ D,/ | E, D, C, B,, |

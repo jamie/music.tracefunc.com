@@ -1,0 +1,23 @@
+X: 23
+T: Golbez, Clad in Darkness [Conversion]
+B: Final Fantasy IV DoReMi
+G: Final Fantasy IV
+C: Nobuo Uematsu
+M: 3/4
+L: 1/4
+Q: 1/4=85
+K: G
+V:1 clef=treble
+[E,G,B,]2 [^C,F,^A,] | [E,G,B,]2 [^C,F,^A,] | [M: 4/4] [E,G,B,]/[F,^A,^C]/ [G,B,D]2 [F,^A,^C] | [M: 3/4] [E,G,B,]3 |
+[E,G,B,]2 [^C,F,^A,] | [E,G,B,]2 [^C,F,^A,] | [M: 4/4] [E,G,B,]/[F,^A,^C]/ [G,B,D]2 [F,^A,^C] | [M: 3/4] [E,G,B,]3 |
+[A,CE]2 [F,B,^D] | [A,CE]2 [F,B,^D] | [M: 4/4] [A,CE]/[B,^DF]/ [CEG]2 [B,^DF] | [M: 3/4] [A,CE]3 |
+[A,CE]2 [F,B,^D] | [A,CE]2 [F,B,^D] | [M: 4/4] [A,CE]/[B,^DF]/ [CEG]2 [B,^DF] | [M: 3/4] [A,CE]3 |
+[M: 4/4] E//^D//E//B,// C//A,//B,//E// A,//E//G,//E// F,//E//G,//E// | A,//E//B,,//B,// ^C,//B,//^D,//B,// E,//B,//^D,//B,// E,//B,//F,//B,// | [^C,E,G,_B,]4 | B//^A//B//F// G//E//F//B// E//B//D//B// ^C//B//D//B// |
+E//B//F,//F// ^G,//F//^A,//F// B,//F//^A,//F// B,//F//^C//F// | [B,D=F^G]4- | [B,D=F^G]4 | [M: 3/4] |]
+V:2 clef=bass
+E,,3 | E,,3 | E,,4 | E,, F,,/G,,/ A,,/B,,/ |
+^C,3 | ^C,3 | ^C,4 | z/ ^C,/B,,/^A,,/B,,/^C,/ |
+A,,3 | A,,3 | A,,4 | A,, A,,/^G,,/A,,/B,,/ |
+A,,3 | A,,3 | A,,4 | z/ A,,/^G,,/G,,/F,,/=F,,/ |
+E,,4- | E,,4 | ^C,4 | B,,4- |
+B,,4 | ^G,/=F,/D,/=F,/ D,/B,,/| D,/B,,/ ^G,,/B,,/^G,,/=F,,/ | ^G,,/=F,,/D,,/B,,,/ |]

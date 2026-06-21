@@ -1,0 +1,30 @@
+X: 13
+T: Battle 2 [Conversion]
+B: Final Fantasy IV DoReMi
+G: Final Fantasy IV
+C: Nobuo Uematsu
+M: C
+N: Treble is 8va first 10 bars from A
+L: 1/4
+Q: 1/4=170
+K: Cm
+V:1 clef=treble
+z4 | z4 | [P:A] g g' ^f'2- | ^f' d'/e'/ f' e'/d'/ |
+e'/c'/- c'3 | c' d' e' b' | [^d'^f'=a']4 | [d'f']4 |
+[^c'=e']4 | [c'e']2- [c'e']/^f'/g'/e'/ | d'/c'/ z z2 | z4 |
+C =B,/C/ D C/D/ | E D/E/ F E/F/ | [P:B] F A G A | c/A/G/A/ G F |
+B,/C/ _D- _D _D/E/ | F F/_G/ A/_G/F/_G/ | A c c2 | F A A2 |
+C F F2 | A c c2 | [P:B'] _G B A B | _d/B/A/B/ A _G |
+E _G F _G | B/_G/F/_G/ F E | ^F/^G/ =A3- | =A2 =A =B |
+[F=Ac]4- | [F=Ac]2 [=Ac] [=Bd] | [Ace]4- | [Ace]4 |
+[cdg] z/ [cdg]/ z [cdg] | z/ [cdg]/ z [cdg] [cdg] | |]
+V:2 clef=bass
+G,,/G,,/G,,/G,,/ G,,/G,,/F,,/F,,/ | G,,/G,,/G,,/G,,/ G,,/G,,/F,,/F,,/ | C, C, C, C, | C, C, C, C, |
+C, C, C, C, | C, C, C, C, | C, C, C, C, | C, C, C, C, |
+C, C, C, C, | C, C, C, C, | C, C, C, C, | C, C, C, C, |
+[C,G,] [C,G,] [C,F,] [C,F,] | [C,E,] [C,E,] [C,D,] [C,D,] | _D,/_D,/ z _D,/_D,/ z | _D,/_D,/ z _D,/_D,/ z |
+_G,,3/ _G,,/ _G,,3/ _G,,/ | _G,,3/ _G,,/ _G,,3/ _G,,/ | F,,3/ F,,/ F,,3/ F,,/ | F,,3/ F,,/ F,,3/ F,,/ |
+F,,3/ F,,/ F,,3/ F,,/ | F,,3/ F,,/ F,,3/ F,,/ | _G,, _G,, _G,, _G,, | _G,, _G,, _G,, F,, |
+E,, E,, E,, E,, | E,, E,, E,, E,, | D,, D,, D,, D,, | D,, D,, D,, =E,, |
+F,, F,, F,, F,, | F,, F,, F,, G,, | A,, A,, A,, A,, | A,, A,, A,, A,, |
+G,, D,/G,,/- G,,/D,/ G,, | D,/ G,, D,/ G,, G,, | |]
