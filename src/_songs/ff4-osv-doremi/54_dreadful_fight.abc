@@ -1,46 +1,62 @@
 X: 28
 T: The Dreadful Fight
+C: Nobuo Uematsu
 B: Final Fantasy IV DoReMi
 G: Final Fantasy IV
-C: Nobuo Uematsu
+N: Playing Point > The song "Battle" has a hard, fast tempo!! It's a song
+N: that I want you to play as much as you can from the Intro. The country
+N: should be careful of changes. Especially pay attention to the timing of
+N: the left hand, Let's Fight!!
 M: C
 L: 1/4
 Q: 1/4=165
 K: C
 V:1 clef=treble
-"Am" ^G,/A,/B,/C/- C/B,/C/D/ | E ^D/F/- F/E/A/^G/ |
-c/^G/A/f/ e/a/^g/c''/ | [f4-b-d'-] | [f4bd'] ||
-[P:A] [c_ea] z [C_EA] z || [M: 3/4] [C_EA] [C,_E,A,] z || [M: C] [dfb] z [DFB] z |
+"Am" !2!^G,/!1!A,/B,/C/- C/!2!B,/!1!C/D/ | E ^D/!4!F/- F/!1!E/A/^G/ |
+"Am" c/!2!^G/!1!A/!5!f/ !1!e/!3!a/!2!^g/!4!c'/ | "Bm-5/E" [f4-b-d'-] | [f4bd'] ||
+[P:A] !segno! "Am-5" [c_ea] z [C_EA] z || [M: 3/4] [C'_E'A'] [C_EA] z || [M: C] "Bm-5" [dfb] z [DFB] z |
 V:2 clef=bass
 A,,3/ A,,/- A,, A,, | A,,3/ A,,/- A,, A,, |
-A,,3/ A,,/- A,, A,, | E,,3 B,, | C,2 ^G,,2 |
-A,, z A,, z || A,, A,, z || [M: 4/4] B,, z B,, z |
-
-
+A,,3/ A,,/- A,, A,, | E,,3 B,, | C,2 ^G,,2 ||
+A,, z A,, z || [M: 3/4] A,, A,, z || [M: C] B,, z B,, z |
 % Page 2
-[d^fb] [D^FB] z A//B//c//e// | [M: 3/4] [P:B] g ^f z | ^f f z | f e z |
-[M: 4/4] ^d e f f | [M: 3/4] g ^f z | ^f f z | f e z |
-[M: 4/4] ^d e f f | [P:C] [^GB]3/ [Ac]/ [Bd]3/ [ce]/ | [df]3/ [ce]/ [Bd]3/ [^GB]/ | [Ac]3/ [Bd]/ [ce]3/ [df]/ |
-[eg]3/ [df]/ [ce]3/ [Ac]/ | [^GB]3/ [Ac]/ [Bd]3/ [ce]/ | [df]3/ [ce]/ [Bd]3/ [^GB]/ | [Ac]3/ [Bd]/ [ce]3/ [df]/ |
-[eg]3/ [df]/ [ce]3/ [Ac]/ | z/ [Bdg]/[Bdg]/ z/ [Acf]/[Acf]/z/[^GBe]/ | [^GBe] z B//c//d//e// d | z/ [Bdg]/[Bdg]/ z/ [Acf]/[Acf]/z/[^GBe]/ |
-[^GBe] z ^g//f//e//d// c//B//A//G// | [P:D] [CEA]7/ [DE_B]/- | [DE_B]7/ [CEA]/- | [CEA]7/ [B,EG]/- |
-[B,EG]4 | [CEA]7/ [DE_B]/- | [DE_B]7/ [CEA]/- | [CEA]4 |
-[ce] [B^d] [_df] [ce] | [P:E] A/B/ c A/B/ c | A/B/c/B/ A/B/c/e/ | ^d A/B/ c/e/ ^d |
-[Ac]/[Bd]/ [ce] [Ac]/[Bd]/ [ce] | [Ac]/[Bd]/[ce]/[Bd]/ [Ac]/[Bd]/[ce]/[eg]/ | [^d^f] [^d^f] [Ac]/[Bd]/[ce]/[eg]/ | ^f ^d/f/- f/d/ e |
-[M: 2/4] ^c/e/- e/c/ | [M: 4/4] d/B/^c/^A/ c/A/B/^G/ | e/c/ z/ e/ ^d c/A/ | c/A/ z z2 |
-[P:F] f2 e2 | ^d2 e2 | f2 g f | e3 z |
-f2 e2 | ^d2 e2 | f2 g f | e3 z |
-|]
-
-B,, B,, z2 | [M: 3/4] [A,CE]3- | [A,CE] [A,CF]2- | [A,CF] [A,C^F]2- |
-[M: 4/4] [A,C^F]2 [A,CF]2 | [M: 3/4] [A,CE]3- | [A,CE] [A,CF]2- | [A,CF] [A,C^F]2- |
-[M: 4/4] [A,C^F]2 [A,CF]2 | E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ | E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ | F,/C,/F,/C,/ F,/C,/F,/C,/ |
-F,/C,/F,/C,/ F,/C,/F,/C,/ | E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ | E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ | F,/C,/F,/C,/ F,/C,/F,/C,/ |
-F,/C,/F,/C,/ F,/C,/F,/C,/ | G,3/ F,/- F,3/ E,/- | E, z z2 | G,3/ F,/- F,3/ E,/- |
-E, z z2 | A,, A,, A,, A,, | A,, A,, A,, A,, | A,, A,, A,, A,, |
+V:1
+"Bm-5" [dfb] [DFB] z !1!A//B//c//e// || [M: 3/4] [P:B] "Am" g ^f z | ^f =f z |
+"Am" f e z || [M: C] ^d e f f || [M: 3/4] g ^f z |
+"Am" ^f =f z | f e z || [M: C] ^d e f f ||
+[P:C] "E" [^GB]3/ [Ac]/ [Bd]3/ [ce]/ | [df]3/ [ce]/ [Bd]3/ [^GB]/ | "F" [Ac]3/ [Bd]/ [ce]3/ [df]/ |
+"F" [eg]3/ [df]/ [ce]3/ [Ac]/ | "E" [^GB]3/ [Ac]/ [Bd]3/ [ce]/ | [df]3/ [ce]/ [Bd]3/ [^GB]/ |
+V:2
+B,, B,, z2 | [M: 3/4] [A,CE]3- | [A,CE] [A,CF]2- |
+[A,CF] [A,C^F]2- | [M: C] [A,C^F]2 [A,CF]2 | [M: 3/4] [A,CE]3- |
+[A,CE] [A,CF]2- | [A,CF] [A,C^F]2- | [M: C] [A,C^F]2 [A,C=F]2 |
+E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ | E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ | F,/C,/F,/C,/ F,/C,/F,/C,/ |
+F,/C,/F,/C,/ F,/C,/F,/C,/ | E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ | E,/B,,/E,/B,,/ E,/B,,/E,/B,,/ |
+% Page 3
+V:1
+"F" [Ac]3/ [Bd]/ [ce]3/ [df]/ | [eg]3/ [df]/ [ce]3/ [Ac]/ | "G" z/ [Bdg]/[Bdg]/ z/ "F" [Acf]/[Acf]/ z/ "E" [^GBe]/ |
+"E" [^GBe] z B//c//d//e// d | "G" z/ [Bdg]/[Bdg]/ z/ "F" [Acf]/[Acf]/ z/ "E" [^GBe]/ | [^GBe] z ^g//f//e//d// c//B//A//G// |
+[P:D] "Am" [CEA]7/ "Em7-5/A" [DE_B]/- | [DE_B]7/ "Am" [CEA]/- | [CEA]7/ "Em/A" [B,EG]/- |
+"Em/A" [B,EG]4 | "Am" [CEA]7/ "Am7-5/A" [DE_B]/- | [DE_B]7/ "Am" [CEA]/- | [CEA]4 |
+"Am" [ce] [B^d] [_df] [ce] ||: [P:E] A/B/ c A/B/ c | A/B/c/B/ A/B/c/e/ |
+V:2
+F,/C,/F,/C,/ F,/C,/F,/C,/ | F,/C,/F,/C,/ F,/C,/F,/C,/ | G,3/ F,/- F,3/ E,/- |
+E, z z2 | G,3/ F,/- F,3/ E,/- | E, z z2 |
+A,, A,, A,, A,, | A,, A,, A,, A,, | A,, A,, A,, A,, |
 A,, A,, A,, A,, | A,, A,, A,, A,, | A,, A,, A,, A,, | A,, A,, A,, A,, |
-A,, A,, A,, A,, | A,, A,, A,, A,, | A,, A,, A,, A,, | B,, A,, A,, B,, |
-A,, A,, A,, A,, | A,, A,, A,, A,, | B,, B,, A,, A,, | B,,3/ _B,,/- _B,, A,,- |
-[M: 2/4] A,,/ _A,,3/ | [M: 4/4] G,, ^F,, F,, E,, | E,/C,/ z/ E,/ ^D, C,/A,,/ | C,/A,,/ z z2 |
+A,, A,, A,, A,, ||: A,, A,, A,, A,, | A,, A,, A,, A,, |
+% Page 4
+V:1
+"B" ^d "Am" A/B/ c/e/ "B" d | "Am" [Ac]/[B=d]/ [ce] [Ac]/[Bd]/ [ce] | [Ac]/[Bd]/[ce]/[Bd]/ [Ac]/[Bd]/[ce]/[eg]/ |
+"B" [^d^f] [df] "Am" [Ac]/[Bd]/[ce]/[eg]/ | "B" ^f ^d/"Bb"=f/- f/=d/ "A" e || [M: 2/4] ^c/_e/- e/=c/ ||
+[M: C] "G" d/B/"F#"^c/^A/ "F" =c/=A/"E"B/^G/ | "Am" e/c/ z/ e/ ^d c/A/ | c/A/ z z2 :||
+[P:F] "F" f2 e2 | ^d2 e2 | "Dm" f2 g f | "E" e3 z |
+"F" f2 "E" e2 | "Eb" ^d2 "E" e2 | "Dm" f2 g f | "E7" e3 z |]
+V:2
+B,, A,, A,, B,, | A,, A,, A,, A,, | A,, A,, A,, A,, |
+B,, B,, A,, A,, | B,,3/ _B,,/- _B,, A,,- || [M: 2/4] A,,/ _A,,3/ ||
+[M: 4/4] G,, ^F,, F,, E,, | E,/C,/ z/ E,/ ^D, C,/A,,/ | C,/A,,/ z z2 :||
 F,3/ C,/ F,2 | F,3/ C,/ F,3/ E,/ | D,3/ A,,/ D,2 | E,3/ B,,/ E, E, |
-z [F,A,C] z [E,^G,B,] | z [E,G,_B,] z [E,^G,B,] | D,3/ D,/ D,3/ D,/ | E, D, C, B,, |
+z [F,A,C] z [E,^G,B,] | z [_E,=G,_B,] z [=E,^G,=B,] | D,3/ D,/ D,3/ D,/ | E, D, C, B,, |]
+
+% TODO: Fingering marks from part C to end.

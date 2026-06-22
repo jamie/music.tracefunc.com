@@ -1,30 +1,48 @@
 X: 13
-T: Battle 2 [Conversion]
+T: Fight 2
+C: Nobuo Uematsu
 B: Final Fantasy IV DoReMi
 G: Final Fantasy IV
-C: Nobuo Uematsu
 M: C
-N: Treble is 8va first 10 bars from A
+N: Playing Point > Fight so as not to lose the battle! Please play with
+N: enthusiasm. A is Repeat Time and D.S time is played only with the right
+N: hand on 1 octave. Pay attention to the left and right combinations for
+N: the last two baves of the country.
 L: 1/4
 Q: 1/4=170
 K: Cm
 V:1 clef=treble
-z4 | z4 | [P:A] g g' ^f'2- | ^f' d'/e'/ f' e'/d'/ |
-e'/c'/- c'3 | c' d' e' b' | [^d'^f'=a']4 | [d'f']4 |
-[^c'=e']4 | [c'e']2- [c'e']/^f'/g'/e'/ | d'/c'/ z z2 | z4 |
-C =B,/C/ D C/D/ | E D/E/ F E/F/ | [P:B] F A G A | c/A/G/A/ G F |
-B,/C/ _D- _D _D/E/ | F F/_G/ A/_G/F/_G/ | A c c2 | F A A2 |
-C F F2 | A c c2 | [P:B'] _G B A B | _d/B/A/B/ A _G |
-E _G F _G | B/_G/F/_G/ F E | ^F/^G/ =A3- | =A2 =A =B |
-[F=Ac]4- | [F=Ac]2 [=Ac] [=Bd] | [Ace]4- | [Ace]4 |
-[cdg] z/ [cdg]/ z [cdg] | z/ [cdg]/ z [cdg] [cdg] | |]
+z4 | z4 |
+|: [P:A] !segno! "Cm" g g' ^f'2- | ^f' d'/e'/ f' e'/d'/ | e'/c'/- c'3 |
 V:2 clef=bass
-G,,/G,,/G,,/G,,/ G,,/G,,/F,,/F,,/ | G,,/G,,/G,,/G,,/ G,,/G,,/F,,/F,,/ | C, C, C, C, | C, C, C, C, |
-C, C, C, C, | C, C, C, C, | C, C, C, C, | C, C, C, C, |
-C, C, C, C, | C, C, C, C, | C, C, C, C, | C, C, C, C, |
-[C,G,] [C,G,] [C,F,] [C,F,] | [C,E,] [C,E,] [C,D,] [C,D,] | _D,/_D,/ z _D,/_D,/ z | _D,/_D,/ z _D,/_D,/ z |
-_G,,3/ _G,,/ _G,,3/ _G,,/ | _G,,3/ _G,,/ _G,,3/ _G,,/ | F,,3/ F,,/ F,,3/ F,,/ | F,,3/ F,,/ F,,3/ F,,/ |
-F,,3/ F,,/ F,,3/ F,,/ | F,,3/ F,,/ F,,3/ F,,/ | _G,, _G,, _G,, _G,, | _G,, _G,, _G,, F,, |
-E,, E,, E,, E,, | E,, E,, E,, E,, | D,, D,, D,, D,, | D,, D,, D,, =E,, |
-F,, F,, F,, F,, | F,, F,, F,, G,, | A,, A,, A,, A,, | A,, A,, A,, A,, |
-G,, D,/G,,/- G,,/D,/ G,, | D,/ G,, D,/ G,, G,, | |]
+G,,/G,,/G,,/G,,/ G,,/G,,/F,,/F,,/ | G,,/G,,/G,,/G,,/ G,,/G,,/F,,/F,,/ |
+|: C, C, C, C, | C, C, C, C, | C, C, C, C, |
+% Page 2
+V:1
+"Cm" c' d' e' b' | [^d'^f'=a']4 | [=d'=f']4 |
+"Cm" [^c'=e']4 | [c'e']2- [c'e']/^f'/g'/e'/ | d'/c'/ z z2 |
+"Cm" z4 | C =B,/C/ D C/D/ | E D/E/ F E/F/ :|
+[P:B] "Db" F A G A | c/A/G/A/ G F | "Gb" B,/C/ _D- _D _D/E/ |
+"Gb" F F/_G/ A/G/F/G/ | "Fm" A c c2 | F A A2 |
+V:2
+C, C, C, C, | C, C, C, C, | C, C, C, C, |
+C, C, C, C, | C, C, C, C, | C, C, C, C, |
+C, C, C, C, | [C,G,] [C,G,] [C,F,] [C,F,] | [C,E,] [C,E,] [C,D,] [C,D,] :|
+_D,/D,/ z D,/D,/ z | _D,/D,/ z D,/D,/ z | _G,,3/ G,,/ G,,3/ G,,/ |
+_G,,3/ G,,/ G,,3/ G,,/ | F,,3/ F,,/ F,,3/ F,,/ | F,,3/ F,,/ F,,3/ F,,/ |
+% Page 3
+V:1
+"Fm" C F F2 | A c c2 || [P:B'] "Gb" _G B A B |
+"Gb" _d/B/A/B/ A _G | "Ebm" E _G F G | B/_G/F/G/ F E |
+"D" ^F/^G/ =A3- | =A2 =A "E" =B | "F" [F=Ac]4- |
+"F" [F=Ac]2 [=Ac] "G" [=Bd] | "Ab" [_Ace]4- | [Ace]4 |
+"Gsus4" [cdg] z/ [cdg]/ z [cdg] | z/ [cdg]/ z [cdg] [cdg] |]
+V:2
+F,,3/ F,,/ F,,3/ F,,/ | F,,3/ F,,/ F,,3/ F,,/ || _G,, G,, G,, G,, |
+_G,, _G,, _G,, F,, | E,, E,, E,, E,, | E,, E,, E,, E,, |
+D,, D,, D,, D,, | D,, D,, D,, =E,, | F,, F,, F,, F,, |
+F,, F,, F,, G,, | A,, A,, A,, A,, | A,, A,, A,, A,, |
+G,, D,/G,,/- G,,/D,/ G,, | D,/ G,, D,/ G,, G,, |]
+
+%% TODO: Fingering
+%% Treble is better notated 2x8va first 9 bars from A
