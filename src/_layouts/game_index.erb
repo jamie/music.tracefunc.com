@@ -12,6 +12,7 @@ layout: default
   <thead>
     <tr>
       <th>#</th>
+      <th></th>
       <th>Title</th>
       <% if has_books %><th>Sourcebook</th><% end %>
     </tr>
@@ -20,6 +21,7 @@ layout: default
     <% resource.data.songs.each do |song| %>
       <tr>
         <td class="text-muted"><%= song["x"] %></td>
+        <td><img src="/images/piano.svg" width="20" height="20" alt="piano"></td>
         <td><a href="<%= song["url"] %>"><%= song["title"] %></a></td>
         <% if has_books %><td class="text-muted"><%= song["book"] %></td><% end %>
       </tr>

@@ -6,14 +6,25 @@ layout: default
 
 <h1><%= resource.data.title %></h1>
 
-<% songs_by_game = resource.data.songs.group_by { |s| s["game"] } %>
-<% songs_by_game.each do |game_name, songs| %>
-  <% if game_name != "" && !game_name.nil? %><h3><%= game_name %></h3><% end %>
-  <ul class="list-group mb-3">
-    <% songs.each do |song| %>
-      <li class="list-group-item">
-        <a href="<%= song["url"] %>"><%= song["title"] %></a>
-      </li>
+<% has_sources = resource.data.songs.any? { |s| !s["game"].to_s.empty? } %>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th></th>
+      <th>Title</th>
+      <% if has_sources %><th>Source</th><% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% resource.data.songs.each do |song| %>
+      <tr>
+        <td class="text-muted"><%= song["x"] %></td>
+        <td><img src="/images/piano.svg" width="20" height="20" alt="piano"></td>
+        <td><a href="<%= song["url"] %>"><%= song["title"] %></a></td>
+        <% if has_sources %><td class="text-muted"><%= song["game"] %></td><% end %>
+      </tr>
     <% end %>
-  </ul>
-<% end %>
+  </tbody>
+</table>
