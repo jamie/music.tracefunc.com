@@ -57,13 +57,15 @@ class Builders::Abc < SiteBuilder
       sorted = book_songs.sort_by { |s| [s["x"], s["title"]] }
       image_path = File.join("src", "images", "#{bslug}.webp")
       cover_image = File.exist?(image_path) ? "/images/#{bslug}.webp" : "/images/missing-cover.webp"
+      stub_path = File.join("src", "_books", "#{bslug}.md")
+      book_content = File.exist?(stub_path) ? File.read(stub_path) : ""
       add_resource :books, "#{bslug}.md" do
         title book_name
         songs sorted
         cover_image cover_image
         layout :book_index
         permalink "/#{bslug}/"
-        content ""
+        content book_content
       end
     end
 

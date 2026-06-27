@@ -4,7 +4,15 @@ layout: default
 
 <nav><a href="/">Home</a></nav>
 
-<h1><%= resource.data.title %></h1>
+<div class="d-flex gap-4 align-items-start mb-4">
+  <div style="flex: 0 0 250px;">
+    <img src="<%= resource.data.cover_image %>" class="img-fluid rounded" alt="<%= resource.data.title %>">
+  </div>
+  <div>
+    <h1><%= resource.data.title %></h1>
+    <div><%= yield %></div>
+  </div>
+</div>
 
 <% has_sources = resource.data.songs.any? { |s| !s["game"].to_s.empty? } %>
 
