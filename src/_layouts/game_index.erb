@@ -21,7 +21,7 @@ layout: default
     <% resource.data.songs.each do |song| %>
       <tr>
         <td class="text-muted"><%= song["x"] %></td>
-        <td><img src="/images/piano.svg" width="20" height="20" alt="piano"></td>
+        <td><img src="/images/<%= song["instrument"] %>.svg" width="20" height="20" alt="<%= song["instrument"] %>"></td>
         <td><a href="<%= song["url"] %>"><%= song["title"] %></a></td>
         <% if has_books %><td class="text-muted"><%= song["book"] %></td><% end %>
       </tr>

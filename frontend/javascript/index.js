@@ -184,7 +184,6 @@ function renderTune(tune) {
       synthControl
         .setTune(visualObj[0], false, {
           chordsOff: true,
-          ...(isTab && { program: 24 }),
         })
         .then(function () {
           document

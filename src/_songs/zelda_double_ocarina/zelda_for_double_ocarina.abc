@@ -3,6 +3,7 @@ T:The Great Sea
 B:The Legend of Zelda for Double Ocarina
 G:The Legend of Zelda
 S:STL Ocarina, with modifications
+%%MIDI program 1 74 % Recorder
 M:4/4
 L:1/16
 Q:1/4=120
@@ -15,6 +16,7 @@ X:2
 T:Song of Healing
 B:The Legend of Zelda for Double Ocarina
 G:The Legend of Zelda
+%%MIDI program 1 74 % Recorder
 M:3/4
 L:1/8
 Q:1/4=120
@@ -27,6 +29,7 @@ X:3
 T:Shop Theme
 B:The Legend of Zelda for Double Ocarina
 G:The Legend of Zelda
+%%MIDI program 1 74 % Recorder
 M:3/4
 L:1/8
 Q:1/4=120
@@ -38,6 +41,7 @@ X:4
 T:Song of Storms
 B:The Legend of Zelda for Double Ocarina
 G:The Legend of Zelda
+%%MIDI program 1 74 % Recorder
 M:3/4
 L:1/8
 Q:1/4=120

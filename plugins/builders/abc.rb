@@ -14,6 +14,7 @@ class Builders::Abc < SiteBuilder
         tune_book  = parse_field(tune_block, 'B')
         tune_game  = parse_field(tune_block, 'G')
         tune_x     = tune_block.match(/^X:\s*(\d+)/)&.captures&.first&.to_i || 0
+        tune_instrument = midi_instrument(tune_block)
         next unless tune_title
 
         tune_slug  = slugify(tune_title)
@@ -25,7 +26,8 @@ class Builders::Abc < SiteBuilder
 
         song_meta = {
           "title" => tune_title, "book" => tune_book, "game" => tune_game,
-          "slug" => tune_slug, "url" => song_url, "x" => tune_x
+          "slug" => tune_slug, "url" => song_url, "x" => tune_x,
+          "instrument" => tune_instrument
         }
         songs_by_book[tune_book] << song_meta if tune_book
         songs_by_game[tune_game] << song_meta if tune_game
@@ -83,6 +85,18 @@ class Builders::Abc < SiteBuilder
   end
 
   private
+
+  def midi_instrument(text)
+    program = text.match(/^%%MIDI program\s+\d+\s+(\d+)/)&.captures&.first.to_i
+    case program
+    when 24..31
+      "guitar"
+    when 72..79
+      "ocarina"
+    else
+      "piano"
+    end
+  end
 
   def parse_field(text, letter)
     text.match(/^#{letter}:(.*)/)&.captures&.first&.strip.then { |v| v&.empty? ? nil : v }
