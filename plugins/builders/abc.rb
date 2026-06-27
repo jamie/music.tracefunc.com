@@ -27,7 +27,7 @@ class Builders::Abc < SiteBuilder
         song_meta = {
           "title" => tune_title, "book" => tune_book, "game" => tune_game,
           "slug" => tune_slug, "url" => song_url, "x" => tune_x,
-          "instrument" => tune_instrument
+          "instrument" => tune_instrument, "file" => file
         }
         songs_by_book[tune_book] << song_meta if tune_book
         songs_by_game[tune_game] << song_meta if tune_game
@@ -56,7 +56,7 @@ class Builders::Abc < SiteBuilder
 
     songs_by_book.each do |book_name, book_songs|
       bslug = slugify(book_name)
-      sorted = book_songs.sort_by { |s| [s["x"], s["title"]] }
+      sorted = book_songs.sort_by { |s| [File.basename(s["file"], ".abc").to_i, s["x"], s["title"]] }
       image_path = File.join("src", "images", "#{bslug}.webp")
       cover_image = File.exist?(image_path) ? "/images/#{bslug}.webp" : "/images/missing-cover.webp"
       stub_path = File.join("src", "_books", "#{bslug}.md")
