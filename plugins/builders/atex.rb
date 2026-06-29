@@ -29,6 +29,9 @@ class Builders::Atex < SiteBuilder
         permalink song_url
         atex content
         content content
+        track tune_track
+        instrument tune_instrument
+        source_file file
       end
     end
   end

@@ -1,8 +1,5 @@
 class Builders::Abc < SiteBuilder
   def build
-    songs_by_book = Hash.new { |h, k| h[k] = [] }
-    songs_by_game = Hash.new { |h, k| h[k] = [] }
-
     Dir['src/_songs/**/*.abc'].sort.each do |file|
       content = File.read(file)
 
@@ -24,14 +21,6 @@ class Builders::Abc < SiteBuilder
         book_url   = tune_book && "/#{book_slug}/"
         game_url   = tune_game && "/sources/#{game_slug}/"
 
-        song_meta = {
-          "title" => tune_title, "book" => tune_book, "game" => tune_game,
-          "slug" => tune_slug, "url" => song_url, "track" => tune_track,
-          "instrument" => tune_instrument, "file" => file
-        }
-        songs_by_book[tune_book] << song_meta if tune_book
-        songs_by_game[tune_game] << song_meta if tune_game
-
         add_resource :songs, "#{tune_slug}.html" do
           title tune_title
           book tune_book
@@ -41,36 +30,10 @@ class Builders::Abc < SiteBuilder
           layout :abc
           permalink song_url
           content tune_block
+          track tune_track
+          instrument tune_instrument
+          source_file file
         end
-      end
-    end
-
-    songs_by_book.each do |book_name, book_songs|
-      bslug = slugify(book_name)
-      sorted = book_songs.sort_by { |s| [File.basename(s["file"], ".abc").to_i, s["track"], s["title"]] }
-      image_path = File.join("src", "images", "#{bslug}.webp")
-      cover_image = File.exist?(image_path) ? "/images/#{bslug}.webp" : "/images/missing-cover.webp"
-      stub_path = File.join("src", "_books", "#{bslug}.md")
-      book_content = File.exist?(stub_path) ? File.read(stub_path) : ""
-      add_resource :books, "#{bslug}.md" do
-        title book_name
-        songs sorted
-        cover_image cover_image
-        layout :book_index
-        permalink "/#{bslug}/"
-        content book_content
-      end
-    end
-
-    songs_by_game.each do |game_name, game_songs|
-      gslug = slugify(game_name)
-      sorted = game_songs.sort_by { |s| [s["track"], s["title"]] }
-      add_resource :games, "#{gslug}.md" do
-        title game_name
-        songs sorted
-        layout :game_index
-        permalink "/sources/#{gslug}/"
-        content ""
       end
     end
   end
