@@ -1,0 +1,28 @@
+\title "Inn"
+\subtitle "Final Fantasy IV"
+\album "Final Fantasy Solo Guitar Collections Vol. 2"
+\artist "Nobuo Uematsu, arr. Daisuke Minamizawa"
+// It's a jingle that plays when you rest at an inn, tent, or cottage in FFIV.
+/* Playing Advice, machine translated from Japanese:
+- B7 minor 11, 4th beat: From the previous D (3) I held down the 4th string.
+Move the ring finger from the 4-fret F tone to the 3-fret E# sound (= F tone)
+and change the chord.
+- 2 small milestones: In the diagram, it is written that the 4 to 6 strings
+and 2 frets should be held down with the middle finger, but if it is easier
+to hold them individually, it doesn't matter.
+*/
+\track
+\staff {tabs}
+\chord ("Cmaj7" x 0 0 2 3 x )
+\chord ("Am" x 3 2 2 0 x )
+\chord ("D(13)" x 0 2 4 x 0 )
+\chord ("B7(#11)" x 0 2 3 2 x )
+\chord ("E" 0 0 1 2 2 2 ) { barre 2 }
+\tuning (E4 B3 G3 D3 A2 D2) { label "Drop D Tuning (6th String = D)" }
+\capo 3
+\tempo 74
+.
+\voice // melody
+:8 0.2{ch Cmaj7} 0.3 2.3{ch Am} 3.2 :4 0.2{ch D13} :8 0.2{ch B7#11} 0.2 | :1 0.1{ch E}{fermata medium 1} |
+\voice // chords
+:4 (0.3 2.4 3.5){ad} (2.4 0.5){ad} (2.3 4.4 0.6){ad} (2.3 3.4 2.5){ad} | :8 (0.2 1.3 2.6){ad} 2.5 2.4 1.3 0.2.2{fermata medium 1} |
