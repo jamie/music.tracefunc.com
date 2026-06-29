@@ -8,7 +8,13 @@ layout: default
   <% if resource.data.book_url %> &bull; <a href="<%= resource.data.book_url %>"><%= resource.data.book %></a><% end %>
 </nav>
 
+<div class="tune" id="tune1">
+  <div class="paper" id="tune1-paper"></div>
+</div>
+<pre class="tune-source" id="tune1-source">
 <%= yield %>
+</pre>
+
 
 <div class="abc-player-bar" id="abc-player-bar">
   <div class="abc-player-bar__audio audio abcjs" id="page-audio"></div>

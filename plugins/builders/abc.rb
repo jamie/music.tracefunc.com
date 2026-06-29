@@ -32,16 +32,7 @@ class Builders::Abc < SiteBuilder
         songs_by_book[tune_book] << song_meta if tune_book
         songs_by_game[tune_game] << song_meta if tune_game
 
-        tune_content = <<~HTML
-          <div class="tune" id="tune1">
-            <div class="paper" id="tune1-paper"></div>
-          </div>
-          <pre class="tune-source" id="tune1-source">
-          #{tune_block}
-          </pre>
-        HTML
-
-        add_resource :songs, "#{tune_slug}.md" do
+        add_resource :songs, "#{tune_slug}.html" do
           title tune_title
           book tune_book
           game tune_game
@@ -49,7 +40,7 @@ class Builders::Abc < SiteBuilder
           game_url game_url
           layout :abc
           permalink song_url
-          content tune_content
+          content tune_block
         end
       end
     end
