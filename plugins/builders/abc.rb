@@ -13,7 +13,7 @@ class Builders::Abc < SiteBuilder
         tune_title = parse_field(tune_block, 'T')
         tune_book  = parse_field(tune_block, 'B')
         tune_game  = parse_field(tune_block, 'G')
-        tune_x     = tune_block.match(/^X:\s*(\d+)/)&.captures&.first&.to_i || 0
+        tune_track = tune_block.match(/^X:\s*(\d+)/)&.captures&.first&.to_i || 0
         tune_instrument = midi_instrument(tune_block)
         next unless tune_title
 
@@ -26,7 +26,7 @@ class Builders::Abc < SiteBuilder
 
         song_meta = {
           "title" => tune_title, "book" => tune_book, "game" => tune_game,
-          "slug" => tune_slug, "url" => song_url, "x" => tune_x,
+          "slug" => tune_slug, "url" => song_url, "track" => tune_track,
           "instrument" => tune_instrument, "file" => file
         }
         songs_by_book[tune_book] << song_meta if tune_book
@@ -47,7 +47,7 @@ class Builders::Abc < SiteBuilder
 
     songs_by_book.each do |book_name, book_songs|
       bslug = slugify(book_name)
-      sorted = book_songs.sort_by { |s| [File.basename(s["file"], ".abc").to_i, s["x"], s["title"]] }
+      sorted = book_songs.sort_by { |s| [File.basename(s["file"], ".abc").to_i, s["track"], s["title"]] }
       image_path = File.join("src", "images", "#{bslug}.webp")
       cover_image = File.exist?(image_path) ? "/images/#{bslug}.webp" : "/images/missing-cover.webp"
       stub_path = File.join("src", "_books", "#{bslug}.md")
@@ -64,7 +64,7 @@ class Builders::Abc < SiteBuilder
 
     songs_by_game.each do |game_name, game_songs|
       gslug = slugify(game_name)
-      sorted = game_songs.sort_by { |s| [s["x"], s["title"]] }
+      sorted = game_songs.sort_by { |s| [s["track"], s["title"]] }
       add_resource :games, "#{gslug}.md" do
         title game_name
         songs sorted

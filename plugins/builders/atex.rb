@@ -6,6 +6,10 @@ class Builders::Atex < SiteBuilder
       tune_title = parse_field(content, 'title')
       tune_game  = parse_field(content, 'subtitle')
       tune_book  = parse_field(content, 'album')
+      # We're abusing atex format a little, typically \track doesn't
+      # accept an argument, we're using it to store track number.
+      tune_track = content.match(/^\\track "(\d+)"/)&.captures&.first&.to_i || 0
+      tune_instrument = "guitar"
       next unless tune_title
 
       tune_slug  = slugify(tune_title)

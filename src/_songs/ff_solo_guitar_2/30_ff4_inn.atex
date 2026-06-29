@@ -3,15 +3,14 @@
 \album "Final Fantasy Solo Guitar Collections Vol. 2"
 \artist "Nobuo Uematsu, arr. Daisuke Minamizawa"
 // It's a jingle that plays when you rest at an inn, tent, or cottage in FFIV.
-/* Playing Advice, machine translated from Japanese:
-- B7 minor 11, 4th beat: From the previous D (3) I held down the 4th string.
+// Playing Advice, machine translated from Japanese:
+\instructions "- B7 minor 11, 4th beat: From the previous D (3) I held down the 4th string.
 Move the ring finger from the 4-fret F tone to the 3-fret E# sound (= F tone)
 and change the chord.
 - 2 small milestones: In the diagram, it is written that the 4 to 6 strings
 and 2 frets should be held down with the middle finger, but if it is easier
-to hold them individually, it doesn't matter.
-*/
-\track
+to hold them individually, it doesn't matter."
+\track "99"
 \staff {tabs}
 \chord ("Cmaj7" x 0 0 2 3 x )
 \chord ("Am" x 3 2 2 0 x )
