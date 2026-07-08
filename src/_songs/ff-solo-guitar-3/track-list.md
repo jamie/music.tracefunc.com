@@ -1,0 +1,27 @@
+# Final Fantasy Solo Guitar Collections Vol.3
+
+- Matoya's Cave ~ FFI
+- Battle Scene 1 ~ FFII
+- Rebel Army Theme ~ FFII
+- Item Get ~ FFIII
+- Rydia ~ FFIV
+- Lenna's Theme ~ FFV
+- Clash on the Big Bridge ~ FFV
+- One Day, For Certain ~ FFV
+- Kids Run Through The City Corner ~ FFVI
+- Kefka ~ FFVI
+- Those Who Fight ~ FFVII
+- Fanfare ~ FFVII
+- Fisherman's Horizon ~ FFVIII
+- Battle 1 ~ FFIX
+- Village of Dali ~ FFIX
+- You're Not Alone ~ FFIX
+- Unfulfilled Feelings ~ FFIX
+- Jecht's Theme ~ FFX
+- Good Night ~ FFX
+- Mog House ~ FFXI
+- Nap ~ FFXII
+- Lightning's Theme ~ FFXIII
+- Noel's Theme ~ FFXIII-2
+- Yakusoku no Basho ~ FFXIII-2
+- Zero (Final Fantasy Type-0 Opening Ver.) ~ FFT-0

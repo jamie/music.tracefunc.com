@@ -1,0 +1,54 @@
+# Final Fantasy Guitar Solo Collection [DoReMi]
+
+- Opening Theme ~ FFI
+- Shop ~ FFI
+- Ending Theme ~ FFI
+- Victory ~ FFI
+- Town ~ FFII
+- Chocobo Theme ~ FFII
+- Finale ~ FFII
+- My Home Town ~ FFIII
+- Cute Little Tozas ~ FFIII
+- Village of Ancient People ~ FFIII
+- Welcome to our Town! ~ FFIV
+- Theme of Love ~ FFIV
+- Cry in Sorrow ~ FFIV
+- Melody of Lute ~ FFIV
+- Rydia ~ FFIV
+- One Day, For Certain ~ FFV
+- Lenna's Theme ~ FFV
+- Town Theme ~ FFV
+- The Sorrow of Parting ~ FFV
+- To Dear Friends ~ FFV
+- Awakening ~ FFVI
+- Cefca ~ FFVI
+- Gau ~ FFVI
+- Coin Song ~ FFVI
+- Forever Rachel ~ FFVI
+- Shadow ~ FFVI
+- Aria di Mezzo Carattere ~ FFVI
+- Ranch Boy ~ FFVII
+- Interrupted by Fireworks ~ FFVII
+- Ahead on our Way ~ FFVII
+- Holding My Thoughts in My Head ~ FFVII
+- On the Other Side of the Mountain ~ FFVII
+- Sending a Dream into the Universe ~ FFVII
+- Aerith's Theme ~ FFVII
+- Fragments of Memories ~ FFVIII
+- Breezy ~ FFVIII
+- My Mind ~ FFVIII
+- Eyes on Me ~ FFVIII
+- Vamo' Alla Flamenco ~ FFIX
+- Stolen Eyes ~ FFIX
+- Frontier Village Dali ~ FFIX
+- Unreachable Desire ~ FFIX
+- Eiko's Theme ~ FFIX
+- Passing Sorrow ~ FFIX
+- Bittersweet Romance ~ FFIX
+- Melodies of Life ~ FFIX
+- Oeilvert ~ FFIX
+- Secret Library Daguerro ~ FFIX
+- To Zanarkand ~ FFX
+- Jecht's Theme ~ FFX
+- Suteki Da Ne ~ FFX
+- Yuna's Determination ~ FFX

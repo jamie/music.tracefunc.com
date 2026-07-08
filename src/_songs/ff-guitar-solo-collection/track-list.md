@@ -1,0 +1,45 @@
+# Final Fantasy Guitar Solo Collection (I~IX)
+
+https://finalfantasy.fandom.com/wiki/Final_Fantasy_Guitar_Solo_Collection_I~IX
+
+- Opening Theme ~ FFI
+- Shop ~ FFI
+- Ending Theme ~ FFI
+- Victory ~ FFI
+- Town ~ FFII
+- Chocobo Theme ~ FFII
+- Finale ~ FFII
+- My Home Town ~ FFIII
+- Cute Little Tozas ~ FFIII
+- Time Remains ~ FFIII
+- Welcome to Our Town! ~ FFIV
+- Theme of Love ~ FFIV
+- Cry in Sorrow ~ FFIV
+- Melody of Lute ~ FFIV
+- Rydia ~ FFIV
+- One Day, for Certain ~ FFV
+- Lenna's Theme ~ FFV
+- Town Theme ~ FFV
+- The Sorrow of Parting ~ FFV
+- To Dear Friends ~ FFV
+- Awakening ~ FFVI
+- Cefca ~ FFVI
+- Coin Song ~ FFVI
+- Forever Rachel ~ FFVI
+- Aria di Mezzo Carattere ~ FFVI
+- Ranch Boy ~ FFVII
+- Ahead On Our Way ~ FFVII
+- Holding My Thoughts in My Head ~ FFVII
+- On the Other Side of the Mountain ~ FFVII
+- Aerith's Theme ~ FFVII
+- Fragments of Memories ~ FFVIII
+- Breezy ~ FFVIII
+- My Mind ~ FFVIII
+- Eyes On Me ~ FFVIII
+- vamo' alla flamenco ~ FFIX
+- Frontier Village Dali ~ FFIX
+- Unreachable Desire ~ FFIX
+- Eiko's Theme ~ FFIX
+- Bittersweet Romance ~ FFIX
+- Melodies Of Life~Final Fantasy ~ FFIX
+- Oeilvert ~ FFIX
