@@ -8,15 +8,15 @@
   },
   "devDependencies": {
     "esbuild": "^0.14.39",
-    "glob": "^8.0.1",
-    "postcss": "^8.4.12",
+    "glob": "^13.0.6",
+    "postcss": "^8.5.28",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-import": "^14.1.0",
+    "postcss-import": "^17.0.0",
     "postcss-load-config": "^3.1.4",
-    "postcss-preset-env": "^7.4.3"
+    "postcss-preset-env": "^11.5.4"
   },
   "dependencies": {
-    "abcjs": "^6.1.0",
-    "yarn": "^1.22.19"
+    "abcjs": "^6.7.1",
+    "yarn": "^1.22.22"
   }
 }
