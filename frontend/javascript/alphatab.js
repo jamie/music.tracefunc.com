@@ -1,4 +1,4 @@
-import "alphatab.css";
+import "$styles/alphatab.css";
 
 const wrapper = document.querySelector(".at-wrap");
 if (wrapper) {

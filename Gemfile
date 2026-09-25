@@ -6,9 +6,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 #
 # To install a plugin, run:
 #
-#   bundle add new-plugin-name -g bridgetown_plugins
+#   bundle add new-plugin-name
 #
-# This will ensure the plugin is added to the correct Bundler group.
+# and add a relevant init comment to your config/initializers.rb file.
 #
 # When you run Bridgetown commands, we recommend using a binstub like so:
 #
@@ -19,20 +19,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # If you need to upgrade/switch Bridgetown versions, change the line below
 # and then run `bundle update bridgetown`
-gem "bridgetown", "~> 1.1.0"
+gem "bridgetown", "~> 2.2.2"
 
 # Uncomment to add file-based dynamic routing to your project:
-# gem "bridgetown-routes", "~> 1.1.0", group: :bridgetown_plugins
+# gem "bridgetown-routes", "~> 2.2.2"
 
 # Uncomment to use the Inspectors API to manipulate the output
 # of your HTML or XML resources:
-# gem "nokogiri", "~> 1.13"
+# gem "nokogiri", "~> 1.18"
 
-# Puma is a Rack-compatible server used by Bridgetown
+# The Rack-compliant web server used by Bridgetown
 # (you can optionally limit this to the "development" group)
-gem "puma", "~> 5.6"
-
-gem "csv"
-gem "base64"
-gem "bigdecimal"
-gem "mutex_m"
+gem "falcon"
