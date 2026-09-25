@@ -19,8 +19,8 @@ rake deploy        # clean + frontend:build + bridgetown build
 rake test          # build with BRIDGETOWN_ENV=test
 
 # Frontend only
-yarn run esbuild          # minified build
-yarn run esbuild-dev      # watch mode
+npm run esbuild           # minified build
+npm run esbuild-dev       # watch mode
 ```
 
 ## Architecture
@@ -66,5 +66,5 @@ An in-progress builder for LilyPond (`.ly`) files that shares the same `T:`/`B:`
 ### Frontend stack
 
 - **esbuild** bundles `frontend/javascript/index.js` and PostCSS processes `frontend/styles/index.css`.
-- **Bootstrap 5.2** is loaded from CDN (not bundled).
+- **Bootstrap 5.3** is loaded from CDN (not bundled).
 - **abcjs 6.x** is the only npm runtime dependency; loaded from the local bundle.

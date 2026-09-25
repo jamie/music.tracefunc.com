@@ -17,7 +17,9 @@
     "read-cache": "^1.0.2"
   },
   "dependencies": {
-    "abcjs": "^6.7.1",
-    "yarn": "^1.22.22"
+    "abcjs": "^6.7.1"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
