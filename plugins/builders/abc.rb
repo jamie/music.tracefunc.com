@@ -1,7 +1,7 @@
 class Builders::Abc < SiteBuilder
   def build
     Dir['src/_songs/**/*.abc'].sort.each do |file|
-      content = File.read(file)
+      content = File.read(file, encoding: "utf-8")
 
       content.split(/(?=^X:)/).each do |tune_block|
         tune_block = tune_block.strip

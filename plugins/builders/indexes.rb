@@ -21,7 +21,7 @@ class Builders::Indexes < SiteBuilder
         image_path = File.join("src", "images", "#{bslug}.webp")
         cover_image = File.exist?(image_path) ? "/images/#{bslug}.webp" : "/images/missing-cover.webp"
         stub_path = File.join("src", "_books", "#{bslug}.md")
-        book_content = File.exist?(stub_path) ? File.read(stub_path) : ""
+        book_content = File.exist?(stub_path) ? File.read(stub_path, encoding: "utf-8") : ""
         add_resource :books, "#{bslug}.md" do
           title book_name
           songs sorted

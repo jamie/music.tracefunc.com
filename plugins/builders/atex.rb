@@ -1,7 +1,7 @@
 class Builders::Atex < SiteBuilder
   def build
     Dir['src/_songs/**/*.atex'].sort.each do |file|
-      content = File.read(file)
+      content = File.read(file, encoding: "utf-8")
 
       tune_title = parse_field(content, 'title')
       tune_game  = parse_field(content, 'subtitle')
