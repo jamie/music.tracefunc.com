@@ -1,0 +1,15 @@
+// Cloudflare Workers config: serves the prebuilt Bridgetown `output` folder
+// as static assets (no Worker script). Workers Builds runs `npx wrangler deploy`
+// after the build command, which uploads `output` and attaches the custom domain.
+{
+  // Must match the Worker name shown in the Cloudflare dashboard
+  "name": "music-tracefunc-com",
+  "compatibility_date": "2026-09-25",
+  "assets": {
+    "directory": "./output",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "music-cf.tracefunc.com", "custom_domain": true }
+  ]
+}
